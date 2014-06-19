@@ -3,13 +3,11 @@
     "version": "0.0.1-ignored",
     "node_version": ">= 0.8.0",
     "devDependencies": {
-        "node-dev": "*",
         "forever":"*",
         "cluster":"*",
         "geddy":"*",
         "redis":"*",
         "html2jade":"*",
-        "canvas":"*",
         "xml2js":"*",
         "mailer":"*",
         "express":"3.2.4",
