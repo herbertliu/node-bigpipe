@@ -3,7 +3,9 @@
     "version": "0.0.1-ignored",
     "node_version": ">= 0.8.0",
     "devDependencies": {
-        "node-dev": "*"
+        "node-dev": "*",
+        "forever":"*",
+        "cluster":"*"
 
     },
     "dependencies": {
