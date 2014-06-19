@@ -12,7 +12,9 @@
         "canvas":"*",
         "xml2js":"*",
         "mailer":"*",
-        "express":"*"
+        "express":"*",
+        "ejs": "*",
+        "express-partials": "*"
     },
     "dependencies": {
 
