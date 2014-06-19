@@ -5,10 +5,7 @@
     "devDependencies": {
         "node-dev": "*",
         "forever":"*",
-        "cluster":"*",
-		"express": "3.2.4",
-		"ejs": "*",
-		"express-partials": "*",
+        "cluster":"*"
 
     },
     "dependencies": {
