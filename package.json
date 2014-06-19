@@ -3,7 +3,6 @@
     "version": "0.0.1-ignored",
     "node_version": ">= 0.8.0",
     "devDependencies": {
-        "node-dev": "*",
         "forever":"*",
         "cluster":"*",
         "geddy":"*",
