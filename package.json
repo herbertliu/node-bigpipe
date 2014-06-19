@@ -9,7 +9,6 @@
         "geddy":"*",
         "redis":"*",
         "html2jade":"*",
-        "canvas":"*",
         "xml2js":"*",
         "mailer":"*",
         "express":"*",
