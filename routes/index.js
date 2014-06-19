@@ -3,9 +3,8 @@
  * GET home page.
  */
 
-var gm = require('gm')
-,	fs = require('fs')
-,	imageMagick = gm.subClass({ imageMagick : true });
+var fs = require('fs');
+
 
 function getDate(date) {
 	var Y = date.getFullYear();
@@ -24,7 +23,9 @@ function getDate(date) {
 
 exports.index = function(req, res){
 	//获取user文件夹里的所有文件名
-	fs.readdir('public/images/user', function(err, files){
+    res.send(200,'welcome!');
+    return;
+    fs.readdir('public/images/user', function(err, files){
 		res.render('index', { title: 'GMTest by KIDx.'
 							, time: (new Date()).getTime()
 							, files: files

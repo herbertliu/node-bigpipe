@@ -4,6 +4,7 @@ bin-debug/
 bin-release/
 node_modules/
 .idea/
+npm-debug.log
 
 # Other files and folders
 .settings/

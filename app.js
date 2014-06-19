@@ -31,7 +31,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.post('/spriter', routes.spriter);
+//app.post('/spriter', routes.spriter);
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Server running at http://localhost:"+app.get('port'));

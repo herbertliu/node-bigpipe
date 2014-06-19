@@ -1,0 +1,1010 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.1.63
+3 info using node@v0.8.12
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json D:\bigpipea\package.json
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'D:\\bigpipea',
+7 verbose install   [ 'node-dev',
+7 verbose install     'forever',
+7 verbose install     'cluster',
+7 verbose install     'geddy',
+7 verbose install     'redis',
+7 verbose install     'html2jade',
+7 verbose install     'canvas',
+7 verbose install     'xml2js',
+7 verbose install     'mailer',
+7 verbose install     'express',
+7 verbose install     'ejs',
+7 verbose install     'express-partials' ] ]
+8 verbose from cache D:\bigpipea\package.json
+9 info preinstall node-bigpipe@0.0.1-ignored
+10 verbose read json D:\bigpipea\node_modules\cluster\package.json
+11 verbose read json D:\bigpipea\node_modules\ejs\package.json
+12 verbose read json D:\bigpipea\node_modules\express\package.json
+13 verbose read json D:\bigpipea\node_modules\express-partials\package.json
+14 verbose read json D:\bigpipea\node_modules\forever\package.json
+15 verbose read json D:\bigpipea\node_modules\geddy\package.json
+16 verbose read json D:\bigpipea\node_modules\mailer\package.json
+17 verbose read json D:\bigpipea\node_modules\node-dev\package.json
+18 verbose read json D:\bigpipea\node_modules\redis\package.json
+19 verbose read json D:\bigpipea\node_modules\xml2js\package.json
+20 verbose from cache D:\bigpipea\package.json
+21 verbose readDependencies using package.json deps
+22 verbose read json D:\bigpipea\node_modules\.bin\package.json
+23 verbose from cache D:\bigpipea\node_modules\cluster\package.json
+24 verbose from cache D:\bigpipea\node_modules\ejs\package.json
+25 verbose from cache D:\bigpipea\node_modules\express\package.json
+26 verbose from cache D:\bigpipea\node_modules\express-partials\package.json
+27 verbose from cache D:\bigpipea\node_modules\forever\package.json
+28 verbose from cache D:\bigpipea\node_modules\geddy\package.json
+29 verbose from cache D:\bigpipea\node_modules\mailer\package.json
+30 verbose from cache D:\bigpipea\node_modules\node-dev\package.json
+31 verbose from cache D:\bigpipea\node_modules\redis\package.json
+32 verbose from cache D:\bigpipea\node_modules\xml2js\package.json
+33 verbose already installed skipping node-dev@* D:\bigpipea
+34 verbose already installed skipping forever@* D:\bigpipea
+35 verbose already installed skipping cluster@* D:\bigpipea
+36 verbose already installed skipping geddy@* D:\bigpipea
+37 verbose already installed skipping redis@* D:\bigpipea
+38 verbose cache add [ 'html2jade@*', null ]
+39 silly cache add name=undefined spec="html2jade@*" args=["html2jade@*",null]
+40 verbose parsed url { pathname: 'html2jade@*',
+40 verbose parsed url   path: 'html2jade@*',
+40 verbose parsed url   href: 'html2jade@*' }
+41 silly cache add name="html2jade" spec="*" args=["html2jade","*"]
+42 verbose parsed url { pathname: '*', path: '*', href: '*' }
+43 verbose addNamed [ 'html2jade', '*' ]
+44 verbose addNamed [ null, '' ]
+45 verbose cache add [ 'canvas@*', null ]
+46 silly cache add name=undefined spec="canvas@*" args=["canvas@*",null]
+47 verbose parsed url { pathname: 'canvas@*', path: 'canvas@*', href: 'canvas@*' }
+48 silly cache add name="canvas" spec="*" args=["canvas","*"]
+49 verbose parsed url { pathname: '*', path: '*', href: '*' }
+50 verbose addNamed [ 'canvas', '*' ]
+51 verbose addNamed [ null, '' ]
+52 verbose already installed skipping xml2js@* D:\bigpipea
+53 verbose already installed skipping mailer@* D:\bigpipea
+54 verbose cache add [ 'express@3.2.4', null ]
+55 silly cache add name=undefined spec="express@3.2.4" args=["express@3.2.4",null]
+56 verbose parsed url { pathname: 'express@3.2.4',
+56 verbose parsed url   path: 'express@3.2.4',
+56 verbose parsed url   href: 'express@3.2.4' }
+57 silly cache add name="express" spec="3.2.4" args=["express","3.2.4"]
+58 verbose parsed url { pathname: '3.2.4', path: '3.2.4', href: '3.2.4' }
+59 verbose addNamed [ 'express', '3.2.4' ]
+60 verbose addNamed [ '3.2.4', '3.2.4' ]
+61 verbose already installed skipping ejs@* D:\bigpipea
+62 verbose already installed skipping express-partials@* D:\bigpipea
+63 silly lockFile 71f420eb-html2jade html2jade@*
+64 verbose lock html2jade@* Y:\71f420eb-html2jade.lock
+65 silly lockFile 5098a37a-canvas canvas@*
+66 verbose lock canvas@* Y:\5098a37a-canvas.lock
+67 silly lockFile 9e0aca13-express-3-2-4 express@3.2.4
+68 verbose lock express@3.2.4 Y:\9e0aca13-express-3-2-4.lock
+69 silly addNameRange { name: 'html2jade', range: '', hasData: false }
+70 silly addNameRange { name: 'canvas', range: '', hasData: false }
+71 verbose url raw express/3.2.4
+72 verbose url resolving [ 'https://registry.npmjs.org/', './express/3.2.4' ]
+73 verbose url resolved https://registry.npmjs.org/express/3.2.4
+74 info trying registry request attempt 1 at 21:08:30
+75 http GET https://registry.npmjs.org/express/3.2.4
+76 verbose url raw html2jade
+77 verbose url resolving [ 'https://registry.npmjs.org/', './html2jade' ]
+78 verbose url resolved https://registry.npmjs.org/html2jade
+79 info trying registry request attempt 1 at 21:08:30
+80 verbose etag "IBNVWC7WLXSEC7O401EPL8PF"
+81 http GET https://registry.npmjs.org/html2jade
+82 verbose url raw canvas
+83 verbose url resolving [ 'https://registry.npmjs.org/', './canvas' ]
+84 verbose url resolved https://registry.npmjs.org/canvas
+85 info trying registry request attempt 1 at 21:08:30
+86 verbose etag "D8C5QHN9ZGVYWM486ZZ8PAYZU"
+87 http GET https://registry.npmjs.org/canvas
+88 http 304 https://registry.npmjs.org/canvas
+89 silly registry.get cb [ 304,
+89 silly registry.get   { date: 'Thu, 19 Jun 2014 13:08:31 GMT',
+89 silly registry.get     server: 'Apache',
+89 silly registry.get     via: '1.1 varnish',
+89 silly registry.get     'last-modified': 'Thu, 19 Jun 2014 13:08:18 GMT',
+89 silly registry.get     'cache-control': 'max-age=30',
+89 silly registry.get     etag: '"D8C5QHN9ZGVYWM486ZZ8PAYZU"',
+89 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+89 silly registry.get     'x-cache': 'HIT',
+89 silly registry.get     'x-cache-hits': '2',
+89 silly registry.get     'x-timer': 'S1403183311.164577,VS0,VE0',
+89 silly registry.get     vary: 'Accept',
+89 silly registry.get     'content-length': '0',
+89 silly registry.get     'keep-alive': 'timeout=10, max=50',
+89 silly registry.get     connection: 'Keep-Alive' } ]
+90 verbose etag canvas from cache
+91 silly addNameRange number 2 { name: 'canvas', range: '', hasData: true }
+92 silly addNameRange versions [ 'canvas',
+92 silly addNameRange   [ '0.0.1',
+92 silly addNameRange     '0.0.2',
+92 silly addNameRange     '0.0.3',
+92 silly addNameRange     '0.0.4',
+92 silly addNameRange     '0.0.5',
+92 silly addNameRange     '0.0.6',
+92 silly addNameRange     '0.0.7',
+92 silly addNameRange     '0.0.8',
+92 silly addNameRange     '0.1.0',
+92 silly addNameRange     '0.2.0',
+92 silly addNameRange     '0.2.1',
+92 silly addNameRange     '0.3.0',
+92 silly addNameRange     '0.3.1',
+92 silly addNameRange     '0.3.2',
+92 silly addNameRange     '0.3.3',
+92 silly addNameRange     '0.4.0',
+92 silly addNameRange     '0.4.1',
+92 silly addNameRange     '0.4.2',
+92 silly addNameRange     '0.4.3',
+92 silly addNameRange     '0.5.0',
+92 silly addNameRange     '0.5.1',
+92 silly addNameRange     '0.5.2',
+92 silly addNameRange     '0.5.3',
+92 silly addNameRange     '0.5.4',
+92 silly addNameRange     '0.6.0',
+92 silly addNameRange     '0.7.0',
+92 silly addNameRange     '0.7.1',
+92 silly addNameRange     '0.7.2',
+92 silly addNameRange     '0.7.3',
+92 silly addNameRange     '0.8.0',
+92 silly addNameRange     '0.8.1',
+92 silly addNameRange     '0.8.2',
+92 silly addNameRange     '0.8.3',
+92 silly addNameRange     '0.9.0',
+92 silly addNameRange     '0.10.0',
+92 silly addNameRange     '0.10.1',
+92 silly addNameRange     '0.10.2',
+92 silly addNameRange     '0.10.3',
+92 silly addNameRange     '0.11.0',
+92 silly addNameRange     '0.11.1',
+92 silly addNameRange     '0.11.2',
+92 silly addNameRange     '0.11.3',
+92 silly addNameRange     '0.12.0',
+92 silly addNameRange     '0.12.1',
+92 silly addNameRange     '0.13.0',
+92 silly addNameRange     '0.13.1',
+92 silly addNameRange     '1.0.0',
+92 silly addNameRange     '1.0.1',
+92 silly addNameRange     '1.0.2',
+92 silly addNameRange     '1.0.3',
+92 silly addNameRange     '1.0.4',
+92 silly addNameRange     '1.1.0',
+92 silly addNameRange     '1.1.1',
+92 silly addNameRange     '1.1.2',
+92 silly addNameRange     '1.1.3',
+92 silly addNameRange     '1.1.4' ] ]
+93 verbose addNamed [ 'canvas', '1.1.4' ]
+94 verbose addNamed [ '1.1.4', '1.1.4' ]
+95 silly lockFile 416f433a-canvas-1-1-4 canvas@1.1.4
+96 verbose lock canvas@1.1.4 Y:\416f433a-canvas-1-1-4.lock
+97 verbose read json Y:\canvas\1.1.4\package\package.json
+98 silly lockFile 416f433a-canvas-1-1-4 canvas@1.1.4
+99 silly lockFile 5098a37a-canvas canvas@*
+100 http 304 https://registry.npmjs.org/html2jade
+101 silly registry.get cb [ 304,
+101 silly registry.get   { date: 'Thu, 19 Jun 2014 13:08:31 GMT',
+101 silly registry.get     server: 'Apache',
+101 silly registry.get     via: '1.1 varnish',
+101 silly registry.get     'last-modified': 'Thu, 19 Jun 2014 13:08:31 GMT',
+101 silly registry.get     'cache-control': 'max-age=30',
+101 silly registry.get     etag: '"IBNVWC7WLXSEC7O401EPL8PF"',
+101 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+101 silly registry.get     'x-cache': 'MISS',
+101 silly registry.get     'x-cache-hits': '0',
+101 silly registry.get     'x-timer': 'S1403183311.156455,VS0,VE143',
+101 silly registry.get     vary: 'Accept',
+101 silly registry.get     'content-length': '0',
+101 silly registry.get     'keep-alive': 'timeout=10, max=50',
+101 silly registry.get     connection: 'Keep-Alive' } ]
+102 verbose etag html2jade from cache
+103 silly addNameRange number 2 { name: 'html2jade', range: '', hasData: true }
+104 silly addNameRange versions [ 'html2jade',
+104 silly addNameRange   [ '0.0.2',
+104 silly addNameRange     '0.0.3',
+104 silly addNameRange     '0.0.4',
+104 silly addNameRange     '0.0.5',
+104 silly addNameRange     '0.0.6',
+104 silly addNameRange     '0.0.7',
+104 silly addNameRange     '0.0.8',
+104 silly addNameRange     '0.1.0',
+104 silly addNameRange     '0.1.1',
+104 silly addNameRange     '0.1.2',
+104 silly addNameRange     '0.1.3',
+104 silly addNameRange     '0.1.4',
+104 silly addNameRange     '0.1.15',
+104 silly addNameRange     '0.1.16',
+104 silly addNameRange     '0.1.17',
+104 silly addNameRange     '0.1.18',
+104 silly addNameRange     '0.1.19',
+104 silly addNameRange     '0.1.20',
+104 silly addNameRange     '0.2.0',
+104 silly addNameRange     '0.2.1',
+104 silly addNameRange     '0.3.0',
+104 silly addNameRange     '0.4.0',
+104 silly addNameRange     '0.4.1',
+104 silly addNameRange     '0.4.2',
+104 silly addNameRange     '0.4.3',
+104 silly addNameRange     '0.4.4',
+104 silly addNameRange     '0.4.5',
+104 silly addNameRange     '0.5.0',
+104 silly addNameRange     '0.5.1',
+104 silly addNameRange     '0.5.2',
+104 silly addNameRange     '0.5.3',
+104 silly addNameRange     '0.6.0',
+104 silly addNameRange     '0.6.1',
+104 silly addNameRange     '0.6.2',
+104 silly addNameRange     '0.6.3',
+104 silly addNameRange     '0.6.4',
+104 silly addNameRange     '0.6.5',
+104 silly addNameRange     '0.7.0',
+104 silly addNameRange     '0.7.1',
+104 silly addNameRange     '0.7.5',
+104 silly addNameRange     '0.7.6',
+104 silly addNameRange     '0.7.7' ] ]
+105 verbose addNamed [ 'html2jade', '0.7.7' ]
+106 verbose addNamed [ '0.7.7', '0.7.7' ]
+107 silly lockFile 157b1d27-html2jade-0-7-7 html2jade@0.7.7
+108 verbose lock html2jade@0.7.7 Y:\157b1d27-html2jade-0-7-7.lock
+109 verbose read json Y:\html2jade\0.7.7\package\package.json
+110 silly lockFile 157b1d27-html2jade-0-7-7 html2jade@0.7.7
+111 silly lockFile 71f420eb-html2jade html2jade@*
+112 http 200 https://registry.npmjs.org/express/3.2.4
+113 silly registry.get cb [ 200,
+113 silly registry.get   { date: 'Thu, 19 Jun 2014 13:08:31 GMT',
+113 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+113 silly registry.get     etag: '"733C2LM2YL0LAHQ49M996XKBZ"',
+113 silly registry.get     'content-type': 'application/json',
+113 silly registry.get     'cache-control': 'max-age=30',
+113 silly registry.get     'content-length': '1415',
+113 silly registry.get     'accept-ranges': 'bytes',
+113 silly registry.get     via: '1.1 varnish',
+113 silly registry.get     age: '0',
+113 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+113 silly registry.get     'x-cache': 'MISS',
+113 silly registry.get     'x-cache-hits': '0',
+113 silly registry.get     'x-timer': 'S1403183311.293442,VS0,VE230',
+113 silly registry.get     vary: 'Accept',
+113 silly registry.get     'keep-alive': 'timeout=10, max=50',
+113 silly registry.get     connection: 'Keep-Alive' } ]
+114 silly lockFile ad0deaf1-js-org-express-express-3-2-4-tgz https://registry.npmjs.org/express/-/express-3.2.4.tgz
+115 verbose lock https://registry.npmjs.org/express/-/express-3.2.4.tgz Y:\ad0deaf1-js-org-express-express-3-2-4-tgz.lock
+116 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-3.2.4.tgz',
+116 verbose addRemoteTarball   'f39fcba9a224011058fb581647688b12df94f585' ]
+117 info retry fetch attempt 1 at 21:08:31
+118 verbose fetch to= C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\tmp.tgz
+119 http GET https://registry.npmjs.org/express/-/express-3.2.4.tgz
+120 http 200 https://registry.npmjs.org/express/-/express-3.2.4.tgz
+121 silly shasum updated bytes 35940
+122 info shasum f39fcba9a224011058fb581647688b12df94f585
+122 info shasum C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\tmp.tgz
+123 verbose tar unpack C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\tmp.tgz
+124 silly lockFile 5b51f8d4-11690-0-1938840332441032-package C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\package
+125 verbose lock C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\package Y:\5b51f8d4-11690-0-1938840332441032-package.lock
+126 silly gunzTarPerm modes [ '755', '644' ]
+127 silly gunzTarPerm extractEntry package.json
+128 silly gunzTarPerm extractEntry .npmignore
+129 silly gunzTarPerm extractEntry LICENSE
+130 silly gunzTarPerm extractEntry index.js
+131 silly gunzTarPerm extractEntry .travis.yml
+132 silly gunzTarPerm extractEntry bin/express
+133 silly gunzTarPerm extractEntry History.md
+134 silly gunzTarPerm extractEntry lib/application.js
+135 silly gunzTarPerm extractEntry lib/express.js
+136 silly gunzTarPerm extractEntry lib/middleware.js
+137 silly gunzTarPerm extractEntry lib/request.js
+138 silly gunzTarPerm extractEntry lib/response.js
+139 silly gunzTarPerm extractEntry lib/utils.js
+140 silly gunzTarPerm extractEntry lib/view.js
+141 silly gunzTarPerm extractEntry lib/router/index.js
+142 silly gunzTarPerm extractEntry lib/router/route.js
+143 silly gunzTarPerm extractEntry Makefile
+144 silly gunzTarPerm extractEntry Readme.md
+145 verbose read json C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\package\package.json
+146 silly lockFile 5b51f8d4-11690-0-1938840332441032-package C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\package
+147 verbose from cache C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\package\package.json
+148 verbose tar pack [ 'Y:\\express\\3.2.4\\package.tgz',
+148 verbose tar pack   'C:\\DOCUME~1\\fredwu\\LOCALS~1\\Temp\\npm-11968\\1403183311690-0.1938840332441032\\package' ]
+149 verbose tarball Y:\express\3.2.4\package.tgz
+150 verbose folder C:\DOCUME~1\fredwu\LOCALS~1\Temp\npm-11968\1403183311690-0.1938840332441032\package
+151 silly lockFile 58380dc0-Y-express-3-2-4-package-tgz Y:\express\3.2.4\package.tgz
+152 verbose lock Y:\express\3.2.4\package.tgz Y:\58380dc0-Y-express-3-2-4-package-tgz.lock
+153 silly lockFile 58380dc0-Y-express-3-2-4-package-tgz Y:\express\3.2.4\package.tgz
+154 silly lockFile c090f173-Y-express-3-2-4-package Y:\express\3.2.4\package
+155 verbose lock Y:\express\3.2.4\package Y:\c090f173-Y-express-3-2-4-package.lock
+156 silly lockFile c090f173-Y-express-3-2-4-package Y:\express\3.2.4\package
+157 verbose tar unpack Y:\express\3.2.4\package.tgz
+158 silly lockFile c090f173-Y-express-3-2-4-package Y:\express\3.2.4\package
+159 verbose lock Y:\express\3.2.4\package Y:\c090f173-Y-express-3-2-4-package.lock
+160 silly gunzTarPerm modes [ '755', '644' ]
+161 silly gunzTarPerm extractEntry package.json
+162 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+163 silly gunzTarPerm extractEntry .npmignore
+164 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+165 silly gunzTarPerm extractEntry LICENSE
+166 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+167 silly gunzTarPerm extractEntry index.js
+168 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+169 silly gunzTarPerm extractEntry .travis.yml
+170 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+171 silly gunzTarPerm extractEntry bin/express
+172 silly gunzTarPerm modified mode [ 'bin/express', 438, 420 ]
+173 silly gunzTarPerm extractEntry History.md
+174 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+175 silly gunzTarPerm extractEntry lib/application.js
+176 silly gunzTarPerm modified mode [ 'lib/application.js', 438, 420 ]
+177 silly gunzTarPerm extractEntry lib/express.js
+178 silly gunzTarPerm modified mode [ 'lib/express.js', 438, 420 ]
+179 silly gunzTarPerm extractEntry lib/middleware.js
+180 silly gunzTarPerm modified mode [ 'lib/middleware.js', 438, 420 ]
+181 silly gunzTarPerm extractEntry lib/request.js
+182 silly gunzTarPerm modified mode [ 'lib/request.js', 438, 420 ]
+183 silly gunzTarPerm extractEntry lib/response.js
+184 silly gunzTarPerm modified mode [ 'lib/response.js', 438, 420 ]
+185 silly gunzTarPerm extractEntry lib/utils.js
+186 silly gunzTarPerm modified mode [ 'lib/utils.js', 438, 420 ]
+187 silly gunzTarPerm extractEntry lib/view.js
+188 silly gunzTarPerm modified mode [ 'lib/view.js', 438, 420 ]
+189 silly gunzTarPerm extractEntry lib/router/index.js
+190 silly gunzTarPerm modified mode [ 'lib/router/index.js', 438, 420 ]
+191 silly gunzTarPerm extractEntry lib/router/route.js
+192 silly gunzTarPerm modified mode [ 'lib/router/route.js', 438, 420 ]
+193 silly gunzTarPerm extractEntry Makefile
+194 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+195 silly gunzTarPerm extractEntry Readme.md
+196 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+197 verbose read json Y:\express\3.2.4\package\package.json
+198 silly lockFile c090f173-Y-express-3-2-4-package Y:\express\3.2.4\package
+199 silly shasum updated bytes 35792
+200 info shasum 07b226dcafba563cb5924f6382d0470675de1257
+200 info shasum Y:\express\3.2.4\package.tgz
+201 verbose from cache Y:\express\3.2.4\package\package.json
+202 verbose chmod Y:\express\3.2.4\package.tgz 644
+203 silly chown skipping for windows Y:\express\3.2.4\package.tgz
+204 silly lockFile ad0deaf1-js-org-express-express-3-2-4-tgz https://registry.npmjs.org/express/-/express-3.2.4.tgz
+205 silly lockFile 9e0aca13-express-3-2-4 express@3.2.4
+206 silly resolved [ { name: 'canvas',
+206 silly resolved     description: 'Canvas graphics API backed by Cairo',
+206 silly resolved     version: '1.1.4',
+206 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+206 silly resolved     contributors: [ [Object], [Object], [Object] ],
+206 silly resolved     keywords:
+206 silly resolved      [ 'canvas',
+206 silly resolved        'graphic',
+206 silly resolved        'graphics',
+206 silly resolved        'pixman',
+206 silly resolved        'cairo',
+206 silly resolved        'image',
+206 silly resolved        'images',
+206 silly resolved        'pdf' ],
+206 silly resolved     homepage: 'https://github.com/learnboost/node-canvas',
+206 silly resolved     repository: { type: 'git', url: 'git://github.com/learnboost/node-canvas' },
+206 silly resolved     scripts: { test: 'make test', install: 'node-gyp rebuild' },
+206 silly resolved     dependencies: { nan: '~1.1.2' },
+206 silly resolved     devDependencies: { express: '3.0', jade: '0.28.1', mocha: '*', should: '*' },
+206 silly resolved     engines: { node: '>= 0.6.0' },
+206 silly resolved     main: './lib/canvas.js',
+206 silly resolved     gypfile: true,
+206 silly resolved     readme: '[![NPM version](https://badge.fury.io/js/canvas.png)](http://badge.fury.io/js/canvas)\n[![Dependency Status](https://gemnasium.com/LearnBoost/node-canvas.png)](https://gemnasium.com/LearnBoost/node-canvas)\n\n# node-canvas\n\n Node canvas is a [Cairo](http://cairographics.org/) backed Canvas implementation for [NodeJS](http://nodejs.org).\n\n## Authors\n\n  - TJ Holowaychuk ([visionmedia](http://github.com/visionmedia))\n  - Nathan Rajlich ([TooTallNate](http://github.com/TooTallNate))\n  - Rod Vagg ([rvagg](http://github.com/rvagg))\n  - Juriy Zaytsev ([kangax](http://github.com/kangax))\n\n## Installation\n\n```bash\n$ npm install canvas\n```\n\nUnless previously installed you\'ll _need_ __Cairo__. For system-specific installation view the [Wiki](https://github.com/LearnBoost/node-canvas/wiki/_pages).\n\nYou can quickly install Cairo and its dependencies for OS X using the one liner below:\n\n```bash\n$ wget https://raw.githubusercontent.com/LearnBoost/node-canvas/master/install -O - | sh\n```\n\n## Screencasts\n\n  - [Introduction](http://screenr.com/CTk)\n\n## Example\n\n```javascript\nvar Canvas = require(\'canvas\')\n  , Image = Canvas.Image\n  , canvas = new Canvas(200,200)\n  , ctx = canvas.getContext(\'2d\');\n\nctx.font = \'30px Impact\';\nctx.rotate(.1);\nctx.fillText("Awesome!", 50, 100);\n\nvar te = ctx.measureText(\'Awesome!\');\nctx.strokeStyle = \'rgba(0,0,0,0.5)\';\nctx.beginPath();\nctx.lineTo(50, 102);\nctx.lineTo(50 + te.width, 102);\nctx.stroke();\n\nconsole.log(\'<img src="\' + canvas.toDataURL() + \'" />\');\n```\n\n## Non-Standard API\n\n node-canvas extends the canvas API to provide interfacing with node, for example streaming PNG data, converting to a `Buffer` instance, etc. Among the interfacing API, in some cases the drawing API has been extended for SSJS image manipulation / creation usage, however keep in mind these additions may fail to render properly within browsers.\n\n### Image#src=Buffer\n\n node-canvas adds `Image#src=Buffer` support, allowing you to read images from disc, redis, etc and apply them via `ctx.drawImage()`. Below we draw scaled down squid png by reading it from the disk with node\'s I/O.\n\n```javascript\nfs.readFile(__dirname + \'/images/squid.png\', function(err, squid){\n  if (err) throw err;\n  img = new Image;\n  img.src = squid;\n  ctx.drawImage(img, 0, 0, img.width / 4, img.height / 4);\n});\n```\n\n Below is an example of a canvas drawing it-self as the source several time:\n\n```javascript\nvar img = new Image;\nimg.src = canvas.toBuffer();\nctx.drawImage(img, 0, 0, 50, 50);\nctx.drawImage(img, 50, 0, 50, 50);\nctx.drawImage(img, 100, 0, 50, 50);\n```\n\n### Image#dataMode\n\nnode-canvas adds `Image#dataMode` support, which can be used to opt-in to mime data tracking of images (currently only JPEGs).\n\nWhen mime data is tracked, in PDF mode JPEGs can be embedded directly into the output, rather than being re-encoded into PNG. This can drastically reduce filesize, and speed up rendering.\n\n```javascript\nvar img = new Image;\nimg.dataMode = Image.MODE_IMAGE; // Only image data tracked\nimg.dataMode = Image.MODE_MIME; // Only mime data tracked\nimg.dataMode = Image.MODE_MIME | Image.MODE_IMAGE; // Both are tracked\n```\n\nIf image data is not tracked, and the Image is drawn to an image rather than a PDF canvas, the output will be junk. Enabling mime data tracking has no benefits (only a slow down) unless you are generating a PDF.\n\n### Canvas#pngStream()\n\n  To create a `PNGStream` simply call `canvas.pngStream()`, and the stream will start to emit _data_ events, finally emitting _end_ when finished. If an exception occurs the _error_ event is emitted.\n\n```javascript\nvar fs = require(\'fs\')\n  , out = fs.createWriteStream(__dirname + \'/text.png\')\n  , stream = canvas.pngStream();\n\nstream.on(\'data\', function(chunk){\n  out.write(chunk);\n});\n\nstream.on(\'end\', function(){\n  console.log(\'saved png\');\n});\n```\n\nCurrently _only_ sync streaming is supported, however we plan on supporting async streaming as well (of course :) ). Until then the `Canvas#toBuffer(callback)` alternative is async utilizing `eio_custom()`.\n\n### Canvas#jpegStream() and Canvas#syncJPEGStream()\n\nYou can likewise create a `JPEGStream` by calling `canvas.jpegStream()` with\nsome optional parameters; functionality is otherwise identical to\n`pngStream()`. See `examples/crop.js` for an example.\n\n_Note: At the moment, `jpegStream()` is the same as `syncJPEGStream()`, both\nare synchronous_\n\n```javascript\nvar stream = canvas.jpegStream({\n    bufsize: 4096 // output buffer size in bytes, default: 4096\n  , quality: 75 // JPEG quality (0-100) default: 75\n  , progressive: false // true for progressive compression, default: false\n});\n```\n\n### Canvas#toBuffer()\n\nA call to `Canvas#toBuffer()` will return a node `Buffer` instance containing all of the PNG data.\n\n```javascript\ncanvas.toBuffer();\n```\n\n### Canvas#toBuffer() async\n\nOptionally we may pass a callback function to `Canvas#toBuffer()`, and this process will be performed asynchronously, and will `callback(err, buf)`.\n\n```javascript\ncanvas.toBuffer(function(err, buf){\n\n});\n```\n\n### Canvas#toDataURL() async\n\nOptionally we may pass a callback function to `Canvas#toDataURL()`, and this process will be performed asynchronously, and will `callback(err, str)`.\n\n```javascript\ncanvas.toDataURL(function(err, str){\n\n});\n```\n\nor specify the mime type:\n\n```javascript\ncanvas.toDataURL(\'image/png\', function(err, str){\n\n});\n```\n\n### CanvasRenderingContext2d#patternQuality\n\nGiven one of the values below will alter pattern (gradients, images, etc) render quality, defaults to _good_.\n\n  - fast\n  - good\n  - best\n  - nearest\n  - bilinear\n\n### CanvasRenderingContext2d#textDrawingMode\n\nCan be either `path` or `glyph`. Using `glyph` is much faster than `path` for drawing, and when using a PDF context will embed the text natively, so will be selectable and lower filesize. The downside is that cairo does not have any subpixel precision for `glyph`, so this will be noticeably lower quality for text positioning in cases such as rotated text. Also, strokeText in `glyph` will act the same as fillText, except using the stroke style for the fill.\n\nDefaults to _path_.\n\nThis property is tracked as part of the canvas state in save/restore.\n\n### CanvasRenderingContext2d#filter\n\nLike `patternQuality`, but applies to transformations effecting more than just patterns. Defaults to _good_.\n\n  - fast\n  - good\n  - best\n  - nearest\n  - bilinear\n\n### Global Composite Operations\n\nIn addition to those specified and commonly implemented by browsers, the following have been added:\n\n  - multiply\n  - screen\n  - overlay\n  - hard-light\n  - soft-light\n  - hsl-hue\n  - hsl-saturation\n  - hsl-color\n  - hsl-luminosity\n\n## Anti-Aliasing\n\n Set anti-aliasing mode\n\n - default\n - none\n - gray\n - subpixel\n\n For example:\n\n```javascript\nctx.antialias = \'none\';\n```\n\n## PDF Support\n\n  Basic PDF support was added in 0.11.0. Make sure to install cairo with `--enable-pdf=yes` for the PDF backend. node-canvas must know that it is creating\n  a PDF on initialization, using the "pdf" string:\n\n```js\nvar canvas = new Canvas(200, 500, \'pdf\');\n```\n\n An additional method `.addPage()` is then available to create\n multiple page PDFs:\n\n```js\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World\', 50, 80);\nctx.addPage();\n\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World 2\', 50, 80);\nctx.addPage();\n\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World 3\', 50, 80);\nctx.addPage();\n```\n\n## Benchmarks\n\n Although node-canvas is extremely new, and we have not even begun optimization yet it is already quite fast. For benchmarks vs other node canvas implementations view this [gist](https://gist.github.com/664922), or update the submodules and run `$ make benchmark` yourself.\n\n## Contribute\n\n Want to contribute to node-canvas? patches for features, bug fixes, documentation, examples and others are certainly welcome. Take a look at the [issue queue](https://github.com/LearnBoost/node-canvas/issues) for existing issues.\n\n## Examples\n\n Examples are placed in _./examples_, be sure to check them out! most produce a png image of the same name, and others such as _live-clock.js_ launch an http server to be viewed in the browser.\n\n## Testing\n\nIf you have not previously, init git submodules:\n\n    $ git submodule update --init\n\nBuild node-canvas:\n\n    $ node-waf configure build\n\nUnit tests:\n\n    $ make test\n\nVisual tests:\n\n    $ make test-server\n\n## Versions\n\nTested with and designed for:\n\n  - node 0.4.2\n  - cairo 1.8.6\n\nFor node 0.2.x `node-canvas` <= 0.4.3 may be used,\n0.5.0 and above are designed for node 0.4.x only.\n\n## Contributors\n\n```\nproject  : node-canvas\n repo age : 1 year, 11 months\n active   : 120 days\n commits  : 963\n files    : 72\n authors  :\n   816\tTj Holowaychuk          84.7%\n    58\tTJ Holowaychuk          6.0%\n    23\tc-spencer               2.4%\n    16\tNathan Rajlich          1.7%\n    12\tatomizer                1.2%\n     6\tElijah Hamovitz         0.6%\n     5\tLuigi Pinca             0.5%\n     5\tRobert Sköld            0.5%\n     4\tobarthel                0.4%\n     3\tDon Park                0.3%\n     2\tAndreas Botsikas        0.2%\n     2\tGabriel Falcao          0.2%\n     1\tBrian McKinney          0.1%\n     1\tSeiya Konno             0.1%\n     1\tSyoyo Fujita            0.1%\n     1\tMarcello Bastea-Forte   0.1%\n     1\tTharit                  0.1%\n     1\tKonstantin Käfer        0.1%\n     1\tTom Carden              0.1%\n     1\tWalt Lin                0.1%\n     1\tDavid Björklund         0.1%\n     1\tBrian White             0.1%\n     1\tPhilippe Plantier       0.1%\n```\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2010 LearnBoost &lt;dev@learnboost.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+206 silly resolved     _id: 'canvas@1.1.4',
+206 silly resolved     _from: 'canvas@*' },
+206 silly resolved   { name: 'html2jade',
+206 silly resolved     description: 'HTML to Jade conversion tool',
+206 silly resolved     version: '0.7.7',
+206 silly resolved     author: { name: 'Don Park', email: 'donpark@docuverse.com' },
+206 silly resolved     repository: { type: 'git', url: 'git://github.com/donpark/html2jade.git' },
+206 silly resolved     license: 'BSD',
+206 silly resolved     main: './lib/html2jade.js',
+206 silly resolved     bin: { html2jade: './cli.js' },
+206 silly resolved     scripts:
+206 silly resolved      { prepublish: 'coffee -c lib',
+206 silly resolved        test: 'node ./node_modules/mocha/bin/mocha' },
+206 silly resolved     dependencies: { commander: '*', he: '^0.4.1', 'jsdom-little': '^0.10.5' },
+206 silly resolved     devDependencies: { async: '*', mocha: '*', 'coffee-script': '~1.6.3' },
+206 silly resolved     engines: { node: '>= 0.4.0' },
+206 silly resolved     readme: '# html2jade #\n[![Build Status](https://travis-ci.org/donpark/html2jade.png?branch=master)](https://travis-ci.org/donpark/html2jade)\n\n`html2jade` converts HTML into [Jade](https://github.com/visionmedia/jade) format.\n\n## Requirements\n\n`html2jade` version prior to 0.7 support OS X and Linux only.\n\n`html2jade` version 0.7+ should support OS X, Windows, and Linux.\n\n## Install ##\n\n    npm install -g html2jade\n\n## Command-line Usage ##\n\nOutputs to stdout if input is URL\n\n    html2jade http://twitter.com\n\n    html2jade http://twitter.com > twitter.jade\n\nOutputs to file if input is file\n\n    html2jade mywebpage.html # outputs mywebpage.jade\n    html2jade public/*.html  # converts all .html files to .jade\n\nConvert HTML from `stdin`\n\n    cat mywebpage.html | html2jade -\n\nTo generate [Scalate](http://scalate.fusesource.org/) compatible output:\n\n    html2jade --scalate http://twitter.com\n    html2jade --scalate http://twitter.com > twitter.jade\n    html2jade --scalate mywebpage.html\n    html2jade --scalate public/*.html\n\n### Command-line Options ###\n\n* `-d, --double` - use double quotes for attributes\n* `-s, --scalate` - generate jade syntax compatible with Scalate\n* `-o, --outdir <dir>` - path to output generated jade file(s) to\n* `-n, --nspaces <n>` - the number of spaces to indent generated files with. Default is 2 spaces\n* `-t, --tabs` - use tabs instead of spaces\n* `--donotencode` - do not html encode characters. This is useful for template files which may contain expressions like {{username}}\n* `--bodyless` - do not output enveloping html and body tags\n* `--numeric` - use numeric character entities\n\n## Programmatic Usage (>= 0.0.7)\n\nTo convert raw HTML into Jade:\n\n    var html2jade = require(\'html2jade\');\n    var html = "<html><body>Hello World</body></html>";\n    html2jade.convertHtml(html, {}, function (err, jade) {\n      // do your thing\n    });\n\nTo convert DOM document into Jade (client-side):\n\n    // assumes html2jade.js file has been loaded\n    Html2Jade.convertDocument(document, {}, function (err, jade) {\n      // do your thing\n    });\n\n## Status ##\n\nMostly usable but sometimes requires fixing up, usually involving conditionals and scripts indentation.\n\nWhile converting a fairly complicated theme package with ~20 HTML files, I had to hand-edit just twice.\n\n## Tools using `html2jade` ##\n\n### Web version ###\n\nThere is a [web version](http://html2jade.aaron-powell.com/) of `html2jade`,\nkindly provided by [@aaronpowell](https://github.com/aaronpowell).\n\n### Linux tray app ###\n\n[Miniclip](http://myguidingstar.github.com/miniclip/) is a Linux tray app that quickly converts\nHTML to Jade, CSS to Stylus and JS to Coffee from clipboard.\n\n## Testing ##\n\nAs of version 0.4, there is a simple unit test that converts HTML files in `test/data` directory\nand compare them against Jade files in the same directory. Unit test harness requires `coffee-script`\nand `mocha` to be installed globally. Run the tests with command `npm test`.\n',
+206 silly resolved     _id: 'html2jade@0.7.7',
+206 silly resolved     _from: 'html2jade@*' },
+206 silly resolved   { name: 'express',
+206 silly resolved     description: 'Sinatra inspired web development framework',
+206 silly resolved     version: '3.2.4',
+206 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+206 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+206 silly resolved     dependencies:
+206 silly resolved      { connect: '2.7.9',
+206 silly resolved        commander: '0.6.1',
+206 silly resolved        'range-parser': '0.0.4',
+206 silly resolved        mkdirp: '0.3.4',
+206 silly resolved        cookie: '0.0.5',
+206 silly resolved        'buffer-crc32': '0.2.1',
+206 silly resolved        fresh: '0.1.0',
+206 silly resolved        methods: '0.0.1',
+206 silly resolved        send: '0.1.0',
+206 silly resolved        'cookie-signature': '1.0.1',
+206 silly resolved        debug: '*' },
+206 silly resolved     devDependencies:
+206 silly resolved      { ejs: '*',
+206 silly resolved        mocha: '*',
+206 silly resolved        jade: '*',
+206 silly resolved        hjs: '*',
+206 silly resolved        stylus: '*',
+206 silly resolved        should: '*',
+206 silly resolved        'connect-redis': '*',
+206 silly resolved        'github-flavored-markdown': '*',
+206 silly resolved        supertest: '0.6.0' },
+206 silly resolved     keywords:
+206 silly resolved      [ 'express',
+206 silly resolved        'framework',
+206 silly resolved        'sinatra',
+206 silly resolved        'web',
+206 silly resolved        'rest',
+206 silly resolved        'restful',
+206 silly resolved        'router',
+206 silly resolved        'app',
+206 silly resolved        'api' ],
+206 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express' },
+206 silly resolved     main: 'index',
+206 silly resolved     bin: { express: './bin/express' },
+206 silly resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+206 silly resolved     engines: { node: '*' },
+206 silly resolved     readme: '![express logo](http://f.cl.ly/items/0V2S1n0K1i3y1c122g04/Screen%20Shot%202012-04-11%20at%209.59.42%20AM.png)\n\n  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org). [![Build Status](https://secure.travis-ci.org/visionmedia/express.png)](http://travis-ci.org/visionmedia/express) [![Dependency Status](https://gemnasium.com/visionmedia/express.png)](https://gemnasium.com/visionmedia/express)\n\n```js\nvar express = require(\'express\');\nvar app = express();\n\napp.get(\'/\', function(req, res){\n  res.send(\'Hello World\');\n});\n\napp.listen(3000);\n```\n\n## Installation\n\n    $ npm install -g express\n\n## Quick Start\n\n The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:\n\n Create the app:\n\n    $ npm install -g express\n    $ express /tmp/foo && cd /tmp/foo\n\n Install dependencies:\n\n    $ npm install\n\n Start the server:\n\n    $ node app\n\n## Features\n\n  * Built on [Connect](http://github.com/senchalabs/connect)\n  * Robust routing\n  * HTTP helpers (redirection, caching, etc)\n  * View system supporting 14+ template engines\n  * Content negotiation\n  * Focus on high performance\n  * Environment based configuration\n  * Executable for generating applications quickly\n  * High test coverage\n\n## Philosophy\n\n  The Express philosophy is to provide small, robust tooling for HTTP servers. Making\n  it a great solution for single page applications, web sites, hybrids, or public\n  HTTP APIs.\n\n  Built on Connect you can use _only_ what you need, and nothing more, applications\n  can be as big or as small as you like, even a single file. Express does\n  not force you to use any specific ORM or template engine. With support for over\n  14 template engines via [Consolidate.js](http://github.com/visionmedia/consolidate.js)\n  you can quickly craft your perfect framework.\n\n## More Information\n\n  * Join #express on freenode\n  * [Google Group](http://groups.google.com/group/express-js) for discussion\n  * Follow [tjholowaychuk](http://twitter.com/tjholowaychuk) on twitter for updates\n  * Visit the [Wiki](http://github.com/visionmedia/express/wiki)\n  * [日本語ドキュメンテーション](http://hideyukisaito.com/doc/expressjs/) by [hideyukisaito](https://github.com/hideyukisaito)\n  * [Русскоязычная документация](http://jsman.ru/express/)\n  * Run express examples [online](https://runnable.com/express)\n\n## Viewing Examples\n\nClone the Express repo, then install the dev dependencies to install all the example / test suite deps:\n\n    $ git clone git://github.com/visionmedia/express.git --depth 1\n    $ cd express\n    $ npm install\n\nthen run whichever tests you want:\n\n    $ node examples/content-negotiation\n\n## Running Tests\n\nTo run the test suite first invoke the following command within the repo, installing the development dependencies:\n\n    $ npm install\n\nthen run the tests:\n\n    $ make test\n\n## Contributors\n\n```\nproject: express\ncommits: 3559\nactive : 468 days\nfiles  : 237\nauthors:\n 1891\tTj Holowaychuk          53.1%\n 1285\tvisionmedia             36.1%\n  182\tTJ Holowaychuk          5.1%\n   54\tAaron Heckmann          1.5%\n   34\tcsausdev                1.0%\n   26\tciaranj                 0.7%\n   21\tRobert Sköld            0.6%\n    6\tGuillermo Rauch         0.2%\n    3\tDav Glass               0.1%\n    3\tNick Poulden            0.1%\n    2\tRandy Merrill           0.1%\n    2\tBenny Wong              0.1%\n    2\tHunter Loftis           0.1%\n    2\tJake Gordon             0.1%\n    2\tBrian McKinney          0.1%\n    2\tRoman Shtylman          0.1%\n    2\tBen Weaver              0.1%\n    2\tDave Hoover             0.1%\n    2\tEivind Fjeldstad        0.1%\n    2\tDaniel Shaw             0.1%\n    1\tMatt Colyer             0.0%\n    1\tPau Ramon               0.0%\n    1\tPero Pejovic            0.0%\n    1\tPeter Rekdal Sunde      0.0%\n    1\tRaynos                  0.0%\n    1\tTeng Siong Ong          0.0%\n    1\tViktor Kelemen          0.0%\n    1\tctide                   0.0%\n    1\t8bitDesigner            0.0%\n    1\tisaacs                  0.0%\n    1\tmgutz                   0.0%\n    1\tpikeas                  0.0%\n    1\tshuwatto                0.0%\n    1\ttstrimple               0.0%\n    1\tewoudj                  0.0%\n    1\tAdam Sanderson          0.0%\n    1\tAndrii Kostenko         0.0%\n    1\tAndy Hiew               0.0%\n    1\tArpad Borsos            0.0%\n    1\tAshwin Purohit          0.0%\n    1\tBenjen                  0.0%\n    1\tDarren Torpey           0.0%\n    1\tGreg Ritter             0.0%\n    1\tGregory Ritter          0.0%\n    1\tJames Herdman           0.0%\n    1\tJim Snodgrass           0.0%\n    1\tJoe McCann              0.0%\n    1\tJonathan Dumaine        0.0%\n    1\tJonathan Palardy        0.0%\n    1\tJonathan Zacsh          0.0%\n    1\tJustin Lilly            0.0%\n    1\tKen Sato                0.0%\n    1\tMaciej Małecki          0.0%\n    1\tMasahiro Hayashi        0.0%\n```\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2009-2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+206 silly resolved     _id: 'express@3.2.4',
+206 silly resolved     dist: { shasum: '07b226dcafba563cb5924f6382d0470675de1257' },
+206 silly resolved     _from: 'express@3.2.4' } ]
+207 info install canvas@1.1.4 into D:\bigpipea
+208 info install html2jade@0.7.7 into D:\bigpipea
+209 info install express@3.2.4 into D:\bigpipea
+210 info installOne canvas@1.1.4
+211 info installOne html2jade@0.7.7
+212 info installOne express@3.2.4
+213 verbose from cache Y:\canvas\1.1.4\package\package.json
+214 info D:\bigpipea\node_modules\canvas unbuild
+215 verbose read json D:\bigpipea\node_modules\canvas\package.json
+216 verbose from cache Y:\html2jade\0.7.7\package\package.json
+217 info D:\bigpipea\node_modules\html2jade unbuild
+218 verbose read json D:\bigpipea\node_modules\html2jade\package.json
+219 verbose from cache Y:\express\3.2.4\package\package.json
+220 info D:\bigpipea\node_modules\express unbuild
+221 verbose from cache D:\bigpipea\node_modules\express\package.json
+222 info preuninstall express@4.4.3
+223 verbose tar unpack Y:\canvas\1.1.4\package.tgz
+224 silly lockFile cd39ee38-D-bigpipea-node-modules-canvas D:\bigpipea\node_modules\canvas
+225 verbose lock D:\bigpipea\node_modules\canvas Y:\cd39ee38-D-bigpipea-node-modules-canvas.lock
+226 verbose tar unpack Y:\html2jade\0.7.7\package.tgz
+227 silly lockFile 1d1d0c41--bigpipea-node-modules-html2jade D:\bigpipea\node_modules\html2jade
+228 verbose lock D:\bigpipea\node_modules\html2jade Y:\1d1d0c41--bigpipea-node-modules-html2jade.lock
+229 info uninstall express@4.4.3
+230 verbose true,D:\bigpipea\node_modules,D:\bigpipea\node_modules unbuild express@4.4.3
+231 info postuninstall express@4.4.3
+232 silly gunzTarPerm modes [ '755', '644' ]
+233 silly gunzTarPerm modes [ '755', '644' ]
+234 silly gunzTarPerm extractEntry package.json
+235 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+236 silly gunzTarPerm extractEntry package.json
+237 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+238 silly gunzTarPerm extractEntry .npmignore
+239 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+240 silly gunzTarPerm extractEntry index.js
+241 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+242 silly gunzTarPerm extractEntry .npmignore
+243 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+244 silly gunzTarPerm extractEntry README.md
+245 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+246 silly gunzTarPerm extractEntry cli.js
+247 silly gunzTarPerm modified mode [ 'cli.js', 438, 420 ]
+248 silly gunzTarPerm extractEntry .travis.yml
+249 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+250 silly gunzTarPerm extractEntry install
+251 silly gunzTarPerm modified mode [ 'install', 438, 420 ]
+252 silly gunzTarPerm extractEntry binding.gyp
+253 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+254 silly gunzTarPerm extractEntry History.md
+255 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+256 silly gunzTarPerm extractEntry .dntrc
+257 silly gunzTarPerm modified mode [ '.dntrc', 438, 420 ]
+258 silly gunzTarPerm extractEntry lib/html2jade.js
+259 silly gunzTarPerm modified mode [ 'lib/html2jade.js', 438, 420 ]
+260 silly gunzTarPerm extractEntry lib/html2jade.coffee
+261 silly gunzTarPerm modified mode [ 'lib/html2jade.coffee', 438, 420 ]
+262 silly gunzTarPerm extractEntry Makefile
+263 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+264 verbose tar unpack Y:\express\3.2.4\package.tgz
+265 silly lockFile 2763d36e-D-bigpipea-node-modules-express D:\bigpipea\node_modules\express
+266 verbose lock D:\bigpipea\node_modules\express Y:\2763d36e-D-bigpipea-node-modules-express.lock
+267 silly gunzTarPerm extractEntry .gitmodules
+268 silly gunzTarPerm modified mode [ '.gitmodules', 438, 420 ]
+269 silly gunzTarPerm extractEntry lib/bindings.js
+270 silly gunzTarPerm modified mode [ 'lib/bindings.js', 438, 420 ]
+271 silly gunzTarPerm extractEntry lib/canvas.js
+272 silly gunzTarPerm modified mode [ 'lib/canvas.js', 438, 420 ]
+273 silly gunzTarPerm modes [ '755', '644' ]
+274 silly gunzTarPerm extractEntry lib/context2d.js
+275 silly gunzTarPerm modified mode [ 'lib/context2d.js', 438, 420 ]
+276 silly gunzTarPerm extractEntry lib/image.js
+277 silly gunzTarPerm modified mode [ 'lib/image.js', 438, 420 ]
+278 silly gunzTarPerm extractEntry lib/jpegstream.js
+279 silly gunzTarPerm modified mode [ 'lib/jpegstream.js', 438, 420 ]
+280 silly gunzTarPerm extractEntry lib/pixelarray.js
+281 silly gunzTarPerm modified mode [ 'lib/pixelarray.js', 438, 420 ]
+282 silly gunzTarPerm extractEntry lib/pngstream.js
+283 silly gunzTarPerm modified mode [ 'lib/pngstream.js', 438, 420 ]
+284 silly gunzTarPerm extractEntry Makefile
+285 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+286 silly gunzTarPerm extractEntry .travis.yml
+287 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+288 silly gunzTarPerm extractEntry Readme.md
+289 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+290 silly gunzTarPerm extractEntry package.json
+291 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+292 silly gunzTarPerm extractEntry src/FontFace.cc
+293 silly gunzTarPerm modified mode [ 'src/FontFace.cc', 438, 420 ]
+294 silly gunzTarPerm extractEntry src/Canvas.cc
+295 silly gunzTarPerm modified mode [ 'src/Canvas.cc', 438, 420 ]
+296 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+297 silly gunzTarPerm modified mode [ 'src/CanvasGradient.cc', 438, 420 ]
+298 silly gunzTarPerm extractEntry src/CanvasGradient.h
+299 silly gunzTarPerm modified mode [ 'src/CanvasGradient.h', 438, 420 ]
+300 silly gunzTarPerm extractEntry .npmignore
+301 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+302 silly gunzTarPerm extractEntry LICENSE
+303 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+304 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+305 silly gunzTarPerm modified mode [ 'src/CanvasPattern.cc', 438, 420 ]
+306 silly gunzTarPerm extractEntry src/CanvasPattern.h
+307 silly gunzTarPerm modified mode [ 'src/CanvasPattern.h', 438, 420 ]
+308 silly gunzTarPerm extractEntry index.js
+309 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+310 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+311 silly gunzTarPerm modified mode [ 'src/CanvasRenderingContext2d.cc', 438, 420 ]
+312 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+313 silly gunzTarPerm modified mode [ 'src/CanvasRenderingContext2d.h', 438, 420 ]
+314 silly gunzTarPerm extractEntry src/closure.h
+315 silly gunzTarPerm modified mode [ 'src/closure.h', 438, 420 ]
+316 silly gunzTarPerm extractEntry src/color.cc
+317 silly gunzTarPerm modified mode [ 'src/color.cc', 438, 420 ]
+318 silly gunzTarPerm extractEntry src/color.h
+319 silly gunzTarPerm modified mode [ 'src/color.h', 438, 420 ]
+320 silly gunzTarPerm extractEntry src/Canvas.h
+321 silly gunzTarPerm modified mode [ 'src/Canvas.h', 438, 420 ]
+322 silly gunzTarPerm extractEntry src/FontFace.h
+323 silly gunzTarPerm modified mode [ 'src/FontFace.h', 438, 420 ]
+324 silly gunzTarPerm extractEntry .travis.yml
+325 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+326 silly gunzTarPerm extractEntry bin/express
+327 silly gunzTarPerm modified mode [ 'bin/express', 438, 420 ]
+328 silly gunzTarPerm extractEntry src/Image.cc
+329 silly gunzTarPerm modified mode [ 'src/Image.cc', 438, 420 ]
+330 silly gunzTarPerm extractEntry src/Image.h
+331 silly gunzTarPerm modified mode [ 'src/Image.h', 438, 420 ]
+332 silly gunzTarPerm extractEntry src/ImageData.cc
+333 silly gunzTarPerm modified mode [ 'src/ImageData.cc', 438, 420 ]
+334 silly gunzTarPerm extractEntry src/ImageData.h
+335 silly gunzTarPerm modified mode [ 'src/ImageData.h', 438, 420 ]
+336 silly gunzTarPerm extractEntry src/init.cc
+337 silly gunzTarPerm modified mode [ 'src/init.cc', 438, 420 ]
+338 silly gunzTarPerm extractEntry src/JPEGStream.h
+339 silly gunzTarPerm modified mode [ 'src/JPEGStream.h', 438, 420 ]
+340 silly gunzTarPerm extractEntry History.md
+341 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+342 silly gunzTarPerm extractEntry lib/application.js
+343 silly gunzTarPerm modified mode [ 'lib/application.js', 438, 420 ]
+344 silly gunzTarPerm extractEntry lib/express.js
+345 silly gunzTarPerm modified mode [ 'lib/express.js', 438, 420 ]
+346 silly gunzTarPerm extractEntry src/PixelArray.cc
+347 silly gunzTarPerm modified mode [ 'src/PixelArray.cc', 438, 420 ]
+348 silly gunzTarPerm extractEntry src/PixelArray.h
+349 silly gunzTarPerm modified mode [ 'src/PixelArray.h', 438, 420 ]
+350 silly gunzTarPerm extractEntry lib/middleware.js
+351 silly gunzTarPerm modified mode [ 'lib/middleware.js', 438, 420 ]
+352 silly gunzTarPerm extractEntry lib/request.js
+353 silly gunzTarPerm modified mode [ 'lib/request.js', 438, 420 ]
+354 silly gunzTarPerm extractEntry src/PNG.h
+355 silly gunzTarPerm modified mode [ 'src/PNG.h', 438, 420 ]
+356 silly gunzTarPerm extractEntry src/Point.h
+357 silly gunzTarPerm modified mode [ 'src/Point.h', 438, 420 ]
+358 silly gunzTarPerm extractEntry lib/response.js
+359 silly gunzTarPerm modified mode [ 'lib/response.js', 438, 420 ]
+360 silly gunzTarPerm extractEntry lib/utils.js
+361 silly gunzTarPerm modified mode [ 'lib/utils.js', 438, 420 ]
+362 silly gunzTarPerm extractEntry util/cairo_include.sh
+363 silly gunzTarPerm modified mode [ 'util/cairo_include.sh', 438, 420 ]
+364 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+365 silly gunzTarPerm modified mode [ 'util/has_cairo_freetype.sh', 438, 420 ]
+366 silly gunzTarPerm extractEntry lib/view.js
+367 silly gunzTarPerm modified mode [ 'lib/view.js', 438, 420 ]
+368 silly gunzTarPerm extractEntry lib/router/index.js
+369 silly gunzTarPerm modified mode [ 'lib/router/index.js', 438, 420 ]
+370 silly gunzTarPerm extractEntry util/has_lib.sh
+371 silly gunzTarPerm modified mode [ 'util/has_lib.sh', 438, 420 ]
+372 silly gunzTarPerm extractEntry util/lib_lookup.sh
+373 silly gunzTarPerm modified mode [ 'util/lib_lookup.sh', 438, 420 ]
+374 silly gunzTarPerm extractEntry lib/router/route.js
+375 silly gunzTarPerm modified mode [ 'lib/router/route.js', 438, 420 ]
+376 silly gunzTarPerm extractEntry Makefile
+377 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+378 silly gunzTarPerm extractEntry Readme.md
+379 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+380 verbose read json D:\bigpipea\node_modules\html2jade\package.json
+381 silly lockFile 1d1d0c41--bigpipea-node-modules-html2jade D:\bigpipea\node_modules\html2jade
+382 info preinstall html2jade@0.7.7
+383 verbose from cache D:\bigpipea\node_modules\html2jade\package.json
+384 verbose readDependencies using package.json deps
+385 verbose from cache D:\bigpipea\node_modules\html2jade\package.json
+386 verbose readDependencies using package.json deps
+387 verbose cache add [ 'commander@*', null ]
+388 silly cache add name=undefined spec="commander@*" args=["commander@*",null]
+389 verbose parsed url { pathname: 'commander@*',
+389 verbose parsed url   path: 'commander@*',
+389 verbose parsed url   href: 'commander@*' }
+390 silly cache add name="commander" spec="*" args=["commander","*"]
+391 verbose parsed url { pathname: '*', path: '*', href: '*' }
+392 verbose addNamed [ 'commander', '*' ]
+393 verbose addNamed [ null, '' ]
+394 silly lockFile bb4edd54-commander commander@*
+395 verbose lock commander@* Y:\bb4edd54-commander.lock
+396 verbose cache add [ 'he@^0.4.1', null ]
+397 silly cache add name=undefined spec="he@^0.4.1" args=["he@^0.4.1",null]
+398 verbose parsed url { pathname: 'he@^0.4.1', path: 'he@^0.4.1', href: 'he@^0.4.1' }
+399 silly cache add name="he" spec="^0.4.1" args=["he","^0.4.1"]
+400 verbose parsed url { pathname: '^0.4.1', path: '^0.4.1', href: '^0.4.1' }
+401 verbose addNamed [ 'he', '^0.4.1' ]
+402 verbose addNamed [ null, null ]
+403 silly lockFile d7416826-he-0-4-1 he@^0.4.1
+404 verbose lock he@^0.4.1 Y:\d7416826-he-0-4-1.lock
+405 verbose cache add [ 'jsdom-little@^0.10.5', null ]
+406 silly cache add name=undefined spec="jsdom-little@^0.10.5" args=["jsdom-little@^0.10.5",null]
+407 verbose parsed url { pathname: 'jsdom-little@^0.10.5',
+407 verbose parsed url   path: 'jsdom-little@^0.10.5',
+407 verbose parsed url   href: 'jsdom-little@^0.10.5' }
+408 silly cache add name="jsdom-little" spec="^0.10.5" args=["jsdom-little","^0.10.5"]
+409 verbose parsed url { pathname: '^0.10.5', path: '^0.10.5', href: '^0.10.5' }
+410 verbose addNamed [ 'jsdom-little', '^0.10.5' ]
+411 verbose addNamed [ null, null ]
+412 silly lockFile e354114b-jsdom-little-0-10-5 jsdom-little@^0.10.5
+413 verbose lock jsdom-little@^0.10.5 Y:\e354114b-jsdom-little-0-10-5.lock
+414 silly addNameRange { name: 'commander', range: '', hasData: false }
+415 info addNameTag [ 'he', '^0.4.1' ]
+416 info addNameTag [ 'jsdom-little', '^0.10.5' ]
+417 verbose url raw commander
+418 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+419 verbose url resolved https://registry.npmjs.org/commander
+420 info trying registry request attempt 1 at 21:08:35
+421 verbose etag "8G59GL3REEKMFWXHP2DJHJTY5"
+422 http GET https://registry.npmjs.org/commander
+423 verbose url raw he
+424 verbose url resolving [ 'https://registry.npmjs.org/', './he' ]
+425 verbose url resolved https://registry.npmjs.org/he
+426 info trying registry request attempt 1 at 21:08:35
+427 verbose etag "28XFLTXF0IB79CBIT7R5BK6EF"
+428 http GET https://registry.npmjs.org/he
+429 verbose url raw jsdom-little
+430 verbose url resolving [ 'https://registry.npmjs.org/', './jsdom-little' ]
+431 verbose url resolved https://registry.npmjs.org/jsdom-little
+432 info trying registry request attempt 1 at 21:08:35
+433 verbose etag "CR81X2JW0W4D9H6C6BYU8XIRR"
+434 http GET https://registry.npmjs.org/jsdom-little
+435 verbose read json D:\bigpipea\node_modules\express\package.json
+436 silly lockFile 2763d36e-D-bigpipea-node-modules-express D:\bigpipea\node_modules\express
+437 info preinstall express@3.2.4
+438 verbose from cache D:\bigpipea\node_modules\express\package.json
+439 verbose readDependencies using package.json deps
+440 verbose from cache D:\bigpipea\node_modules\express\package.json
+441 verbose readDependencies using package.json deps
+442 verbose cache add [ 'connect@2.7.9', null ]
+443 silly cache add name=undefined spec="connect@2.7.9" args=["connect@2.7.9",null]
+444 verbose parsed url { pathname: 'connect@2.7.9',
+444 verbose parsed url   path: 'connect@2.7.9',
+444 verbose parsed url   href: 'connect@2.7.9' }
+445 silly cache add name="connect" spec="2.7.9" args=["connect","2.7.9"]
+446 verbose parsed url { pathname: '2.7.9', path: '2.7.9', href: '2.7.9' }
+447 verbose addNamed [ 'connect', '2.7.9' ]
+448 verbose addNamed [ '2.7.9', '2.7.9' ]
+449 silly lockFile 00d50ffd-connect-2-7-9 connect@2.7.9
+450 verbose lock connect@2.7.9 Y:\00d50ffd-connect-2-7-9.lock
+451 verbose cache add [ 'commander@0.6.1', null ]
+452 silly cache add name=undefined spec="commander@0.6.1" args=["commander@0.6.1",null]
+453 verbose parsed url { pathname: 'commander@0.6.1',
+453 verbose parsed url   path: 'commander@0.6.1',
+453 verbose parsed url   href: 'commander@0.6.1' }
+454 silly cache add name="commander" spec="0.6.1" args=["commander","0.6.1"]
+455 verbose parsed url { pathname: '0.6.1', path: '0.6.1', href: '0.6.1' }
+456 verbose addNamed [ 'commander', '0.6.1' ]
+457 verbose addNamed [ '0.6.1', '0.6.1' ]
+458 silly lockFile fa16a2ce-commander-0-6-1 commander@0.6.1
+459 verbose lock commander@0.6.1 Y:\fa16a2ce-commander-0-6-1.lock
+460 verbose cache add [ 'range-parser@0.0.4', null ]
+461 silly cache add name=undefined spec="range-parser@0.0.4" args=["range-parser@0.0.4",null]
+462 verbose parsed url { pathname: 'range-parser@0.0.4',
+462 verbose parsed url   path: 'range-parser@0.0.4',
+462 verbose parsed url   href: 'range-parser@0.0.4' }
+463 silly cache add name="range-parser" spec="0.0.4" args=["range-parser","0.0.4"]
+464 verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+465 verbose addNamed [ 'range-parser', '0.0.4' ]
+466 verbose addNamed [ '0.0.4', '0.0.4' ]
+467 silly lockFile 0760c556-range-parser-0-0-4 range-parser@0.0.4
+468 verbose lock range-parser@0.0.4 Y:\0760c556-range-parser-0-0-4.lock
+469 verbose cache add [ 'mkdirp@0.3.4', null ]
+470 silly cache add name=undefined spec="mkdirp@0.3.4" args=["mkdirp@0.3.4",null]
+471 verbose parsed url { pathname: 'mkdirp@0.3.4',
+471 verbose parsed url   path: 'mkdirp@0.3.4',
+471 verbose parsed url   href: 'mkdirp@0.3.4' }
+472 silly cache add name="mkdirp" spec="0.3.4" args=["mkdirp","0.3.4"]
+473 verbose parsed url { pathname: '0.3.4', path: '0.3.4', href: '0.3.4' }
+474 verbose addNamed [ 'mkdirp', '0.3.4' ]
+475 verbose addNamed [ '0.3.4', '0.3.4' ]
+476 silly lockFile 86f43333-mkdirp-0-3-4 mkdirp@0.3.4
+477 verbose lock mkdirp@0.3.4 Y:\86f43333-mkdirp-0-3-4.lock
+478 verbose cache add [ 'cookie@0.0.5', null ]
+479 silly cache add name=undefined spec="cookie@0.0.5" args=["cookie@0.0.5",null]
+480 verbose parsed url { pathname: 'cookie@0.0.5',
+480 verbose parsed url   path: 'cookie@0.0.5',
+480 verbose parsed url   href: 'cookie@0.0.5' }
+481 silly cache add name="cookie" spec="0.0.5" args=["cookie","0.0.5"]
+482 verbose parsed url { pathname: '0.0.5', path: '0.0.5', href: '0.0.5' }
+483 verbose addNamed [ 'cookie', '0.0.5' ]
+484 verbose addNamed [ '0.0.5', '0.0.5' ]
+485 silly lockFile fe08ced7-cookie-0-0-5 cookie@0.0.5
+486 verbose lock cookie@0.0.5 Y:\fe08ced7-cookie-0-0-5.lock
+487 verbose cache add [ 'buffer-crc32@0.2.1', null ]
+488 silly cache add name=undefined spec="buffer-crc32@0.2.1" args=["buffer-crc32@0.2.1",null]
+489 verbose parsed url { pathname: 'buffer-crc32@0.2.1',
+489 verbose parsed url   path: 'buffer-crc32@0.2.1',
+489 verbose parsed url   href: 'buffer-crc32@0.2.1' }
+490 silly cache add name="buffer-crc32" spec="0.2.1" args=["buffer-crc32","0.2.1"]
+491 verbose parsed url { pathname: '0.2.1', path: '0.2.1', href: '0.2.1' }
+492 verbose addNamed [ 'buffer-crc32', '0.2.1' ]
+493 verbose addNamed [ '0.2.1', '0.2.1' ]
+494 silly lockFile 057d0d26-buffer-crc32-0-2-1 buffer-crc32@0.2.1
+495 verbose lock buffer-crc32@0.2.1 Y:\057d0d26-buffer-crc32-0-2-1.lock
+496 verbose cache add [ 'fresh@0.1.0', null ]
+497 silly cache add name=undefined spec="fresh@0.1.0" args=["fresh@0.1.0",null]
+498 verbose parsed url { pathname: 'fresh@0.1.0',
+498 verbose parsed url   path: 'fresh@0.1.0',
+498 verbose parsed url   href: 'fresh@0.1.0' }
+499 silly cache add name="fresh" spec="0.1.0" args=["fresh","0.1.0"]
+500 verbose parsed url { pathname: '0.1.0', path: '0.1.0', href: '0.1.0' }
+501 verbose addNamed [ 'fresh', '0.1.0' ]
+502 verbose addNamed [ '0.1.0', '0.1.0' ]
+503 silly lockFile 3dea7da8-fresh-0-1-0 fresh@0.1.0
+504 verbose lock fresh@0.1.0 Y:\3dea7da8-fresh-0-1-0.lock
+505 verbose cache add [ 'methods@0.0.1', null ]
+506 silly cache add name=undefined spec="methods@0.0.1" args=["methods@0.0.1",null]
+507 verbose parsed url { pathname: 'methods@0.0.1',
+507 verbose parsed url   path: 'methods@0.0.1',
+507 verbose parsed url   href: 'methods@0.0.1' }
+508 silly cache add name="methods" spec="0.0.1" args=["methods","0.0.1"]
+509 verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+510 verbose addNamed [ 'methods', '0.0.1' ]
+511 verbose addNamed [ '0.0.1', '0.0.1' ]
+512 silly lockFile 209c2920-methods-0-0-1 methods@0.0.1
+513 verbose lock methods@0.0.1 Y:\209c2920-methods-0-0-1.lock
+514 verbose cache add [ 'send@0.1.0', null ]
+515 silly cache add name=undefined spec="send@0.1.0" args=["send@0.1.0",null]
+516 verbose parsed url { pathname: 'send@0.1.0',
+516 verbose parsed url   path: 'send@0.1.0',
+516 verbose parsed url   href: 'send@0.1.0' }
+517 silly cache add name="send" spec="0.1.0" args=["send","0.1.0"]
+518 verbose parsed url { pathname: '0.1.0', path: '0.1.0', href: '0.1.0' }
+519 verbose addNamed [ 'send', '0.1.0' ]
+520 verbose addNamed [ '0.1.0', '0.1.0' ]
+521 silly lockFile ef2886cd-send-0-1-0 send@0.1.0
+522 verbose lock send@0.1.0 Y:\ef2886cd-send-0-1-0.lock
+523 verbose cache add [ 'cookie-signature@1.0.1', null ]
+524 silly cache add name=undefined spec="cookie-signature@1.0.1" args=["cookie-signature@1.0.1",null]
+525 verbose parsed url { pathname: 'cookie-signature@1.0.1',
+525 verbose parsed url   path: 'cookie-signature@1.0.1',
+525 verbose parsed url   href: 'cookie-signature@1.0.1' }
+526 silly cache add name="cookie-signature" spec="1.0.1" args=["cookie-signature","1.0.1"]
+527 verbose parsed url { pathname: '1.0.1', path: '1.0.1', href: '1.0.1' }
+528 verbose addNamed [ 'cookie-signature', '1.0.1' ]
+529 verbose addNamed [ '1.0.1', '1.0.1' ]
+530 silly lockFile d4a1eba1-cookie-signature-1-0-1 cookie-signature@1.0.1
+531 verbose lock cookie-signature@1.0.1 Y:\d4a1eba1-cookie-signature-1-0-1.lock
+532 verbose cache add [ 'debug@*', null ]
+533 silly cache add name=undefined spec="debug@*" args=["debug@*",null]
+534 verbose parsed url { pathname: 'debug@*', path: 'debug@*', href: 'debug@*' }
+535 silly cache add name="debug" spec="*" args=["debug","*"]
+536 verbose parsed url { pathname: '*', path: '*', href: '*' }
+537 verbose addNamed [ 'debug', '*' ]
+538 verbose addNamed [ null, '' ]
+539 silly lockFile 3ac45eff-debug debug@*
+540 verbose lock debug@* Y:\3ac45eff-debug.lock
+541 silly addNameRange { name: 'debug', range: '', hasData: false }
+542 verbose url raw mkdirp/0.3.4
+543 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp/0.3.4' ]
+544 verbose url resolved https://registry.npmjs.org/mkdirp/0.3.4
+545 info trying registry request attempt 1 at 21:08:35
+546 http GET https://registry.npmjs.org/mkdirp/0.3.4
+547 verbose url raw send/0.1.0
+548 verbose url resolving [ 'https://registry.npmjs.org/', './send/0.1.0' ]
+549 verbose url resolved https://registry.npmjs.org/send/0.1.0
+550 info trying registry request attempt 1 at 21:08:35
+551 http GET https://registry.npmjs.org/send/0.1.0
+552 verbose url raw connect/2.7.9
+553 verbose url resolving [ 'https://registry.npmjs.org/', './connect/2.7.9' ]
+554 verbose url resolved https://registry.npmjs.org/connect/2.7.9
+555 info trying registry request attempt 1 at 21:08:35
+556 http GET https://registry.npmjs.org/connect/2.7.9
+557 verbose url raw buffer-crc32/0.2.1
+558 verbose url resolving [ 'https://registry.npmjs.org/', './buffer-crc32/0.2.1' ]
+559 verbose url resolved https://registry.npmjs.org/buffer-crc32/0.2.1
+560 info trying registry request attempt 1 at 21:08:35
+561 verbose etag "7PBKNM6AN9Q0UPZKUY9649994"
+562 http GET https://registry.npmjs.org/buffer-crc32/0.2.1
+563 verbose url raw commander/0.6.1
+564 verbose url resolving [ 'https://registry.npmjs.org/', './commander/0.6.1' ]
+565 verbose url resolved https://registry.npmjs.org/commander/0.6.1
+566 info trying registry request attempt 1 at 21:08:35
+567 verbose etag "1ZNKCI0Y6VV4DFTUW16Z9D1B"
+568 http GET https://registry.npmjs.org/commander/0.6.1
+569 verbose url raw range-parser/0.0.4
+570 verbose url resolving [ 'https://registry.npmjs.org/', './range-parser/0.0.4' ]
+571 verbose url resolved https://registry.npmjs.org/range-parser/0.0.4
+572 info trying registry request attempt 1 at 21:08:35
+573 verbose etag "1TSBF2WUBYOJD0JUPM3DK0YY0"
+574 http GET https://registry.npmjs.org/range-parser/0.0.4
+575 verbose url raw methods/0.0.1
+576 verbose url resolving [ 'https://registry.npmjs.org/', './methods/0.0.1' ]
+577 verbose url resolved https://registry.npmjs.org/methods/0.0.1
+578 info trying registry request attempt 1 at 21:08:35
+579 verbose etag "DAF5TGW23L9NNWTYB3BOQXOUI"
+580 http GET https://registry.npmjs.org/methods/0.0.1
+581 verbose url raw cookie/0.0.5
+582 verbose url resolving [ 'https://registry.npmjs.org/', './cookie/0.0.5' ]
+583 verbose url resolved https://registry.npmjs.org/cookie/0.0.5
+584 info trying registry request attempt 1 at 21:08:35
+585 verbose etag "F1R4EMW6NEBFUL3OK9Q9DKBJF"
+586 http GET https://registry.npmjs.org/cookie/0.0.5
+587 verbose url raw cookie-signature/1.0.1
+588 verbose url resolving [ 'https://registry.npmjs.org/', './cookie-signature/1.0.1' ]
+589 verbose url resolved https://registry.npmjs.org/cookie-signature/1.0.1
+590 info trying registry request attempt 1 at 21:08:35
+591 verbose etag "39TPUOQD7Z6XA3T5UOWDYBM9W"
+592 http GET https://registry.npmjs.org/cookie-signature/1.0.1
+593 verbose url raw fresh/0.1.0
+594 verbose url resolving [ 'https://registry.npmjs.org/', './fresh/0.1.0' ]
+595 verbose url resolved https://registry.npmjs.org/fresh/0.1.0
+596 info trying registry request attempt 1 at 21:08:35
+597 verbose etag "6CDQ014VE8MJLSGJOYMKCVKVG"
+598 http GET https://registry.npmjs.org/fresh/0.1.0
+599 verbose url raw debug
+600 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+601 verbose url resolved https://registry.npmjs.org/debug
+602 info trying registry request attempt 1 at 21:08:35
+603 verbose etag "CNVPE4C9KBM7UNRKSBUN4MJF0"
+604 http GET https://registry.npmjs.org/debug
+605 http 304 https://registry.npmjs.org/commander
+606 silly registry.get cb [ 304,
+606 silly registry.get   { date: 'Thu, 19 Jun 2014 13:08:35 GMT',
+606 silly registry.get     server: 'Apache',
+606 silly registry.get     via: '1.1 varnish',
+606 silly registry.get     'last-modified': 'Thu, 19 Jun 2014 13:08:35 GMT',
+606 silly registry.get     'cache-control': 'max-age=30',
+606 silly registry.get     etag: '"8G59GL3REEKMFWXHP2DJHJTY5"',
+606 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+606 silly registry.get     'x-cache': 'HIT',
+606 silly registry.get     'x-cache-hits': '1',
+606 silly registry.get     'x-timer': 'S1403183315.381089,VS0,VE0',
+606 silly registry.get     vary: 'Accept',
+606 silly registry.get     'content-length': '0',
+606 silly registry.get     'keep-alive': 'timeout=10, max=50',
+606 silly registry.get     connection: 'Keep-Alive' } ]
+607 verbose etag commander from cache
+608 silly addNameRange number 2 { name: 'commander', range: '', hasData: true }
+609 silly addNameRange versions [ 'commander',
+609 silly addNameRange   [ '0.0.1',
+609 silly addNameRange     '0.0.3',
+609 silly addNameRange     '0.0.4',
+609 silly addNameRange     '0.0.5',
+609 silly addNameRange     '0.1.0',
+609 silly addNameRange     '0.2.0',
+609 silly addNameRange     '0.2.1',
+609 silly addNameRange     '0.3.0',
+609 silly addNameRange     '0.3.1',
+609 silly addNameRange     '0.3.2',
+609 silly addNameRange     '0.3.3',
+609 silly addNameRange     '0.4.0',
+609 silly addNameRange     '0.4.1',
+609 silly addNameRange     '0.4.2',
+609 silly addNameRange     '0.4.3',
+609 silly addNameRange     '0.5.0',
+609 silly addNameRange     '0.5.1',
+609 silly addNameRange     '0.6.0',
+609 silly addNameRange     '0.6.1',
+609 silly addNameRange     '0.5.2',
+609 silly addNameRange     '1.0.0',
+609 silly addNameRange     '1.0.1',
+609 silly addNameRange     '1.0.2',
+609 silly addNameRange     '1.0.3',
+609 silly addNameRange     '1.0.4',
+609 silly addNameRange     '1.0.5',
+609 silly addNameRange     '1.1.0',
+609 silly addNameRange     '1.1.1',
+609 silly addNameRange     '1.2.0',
+609 silly addNameRange     '1.3.0',
+609 silly addNameRange     '1.3.1',
+609 silly addNameRange     '1.3.2',
+609 silly addNameRange     '2.0.0',
+609 silly addNameRange     '2.1.0',
+609 silly addNameRange     '2.2.0' ] ]
+610 verbose addNamed [ 'commander', '2.2.0' ]
+611 verbose addNamed [ '2.2.0', '2.2.0' ]
+612 silly lockFile a636243f-commander-2-2-0 commander@2.2.0
+613 verbose lock commander@2.2.0 Y:\a636243f-commander-2-2-0.lock
+614 verbose read json D:\bigpipea\node_modules\canvas\package.json
+615 verbose read json Y:\commander\2.2.0\package\package.json
+616 silly lockFile cd39ee38-D-bigpipea-node-modules-canvas D:\bigpipea\node_modules\canvas
+617 info preinstall canvas@1.1.4
+618 verbose from cache D:\bigpipea\node_modules\canvas\package.json
+619 verbose readDependencies using package.json deps
+620 verbose from cache D:\bigpipea\node_modules\canvas\package.json
+621 verbose readDependencies using package.json deps
+622 verbose cache add [ 'nan@~1.1.2', null ]
+623 silly cache add name=undefined spec="nan@~1.1.2" args=["nan@~1.1.2",null]
+624 verbose parsed url { pathname: 'nan@~1.1.2',
+624 verbose parsed url   path: 'nan@~1.1.2',
+624 verbose parsed url   href: 'nan@~1.1.2' }
+625 silly cache add name="nan" spec="~1.1.2" args=["nan","~1.1.2"]
+626 verbose parsed url { pathname: '~1.1.2', path: '~1.1.2', href: '~1.1.2' }
+627 verbose addNamed [ 'nan', '~1.1.2' ]
+628 verbose addNamed [ null, '>=1.1.2- <1.2.0-' ]
+629 silly lockFile e11e3d1c-nan-1-1-2 nan@~1.1.2
+630 verbose lock nan@~1.1.2 Y:\e11e3d1c-nan-1-1-2.lock
+631 silly addNameRange { name: 'nan', range: '>=1.1.2- <1.2.0-', hasData: false }
+632 silly lockFile a636243f-commander-2-2-0 commander@2.2.0
+633 verbose url raw nan
+634 verbose url resolving [ 'https://registry.npmjs.org/', './nan' ]
+635 verbose url resolved https://registry.npmjs.org/nan
+636 info trying registry request attempt 1 at 21:08:35
+637 verbose etag "2AR77MDTC9FRZIYCVIL3QPO57"
+638 http GET https://registry.npmjs.org/nan
+639 silly lockFile bb4edd54-commander commander@*
+640 http 304 https://registry.npmjs.org/jsdom-little
+641 silly registry.get cb [ 304,
+641 silly registry.get   { date: 'Thu, 19 Jun 2014 13:08:35 GMT',
+641 silly registry.get     server: 'Apache',
+641 silly registry.get     via: '1.1 varnish',
+641 silly registry.get     'last-modified': 'Thu, 19 Jun 2014 13:08:35 GMT',
+641 silly registry.get     'cache-control': 'max-age=30',
+641 silly registry.get     etag: '"CR81X2JW0W4D9H6C6BYU8XIRR"',
+641 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+641 silly registry.get     'x-cache': 'MISS',
+641 silly registry.get     'x-cache-hits': '0',
+641 silly registry.get     'x-timer': 'S1403183315.407495,VS0,VE184',
+641 silly registry.get     vary: 'Accept',
+641 silly registry.get     'content-length': '0',
+641 silly registry.get     'keep-alive': 'timeout=10, max=50',
+641 silly registry.get     connection: 'Keep-Alive' } ]
+642 verbose etag jsdom-little from cache
+643 silly lockFile e354114b-jsdom-little-0-10-5 jsdom-little@^0.10.5
+644 verbose about to build D:\bigpipea\node_modules\html2jade
+645 info D:\bigpipea\node_modules\html2jade unbuild
+646 verbose from cache D:\bigpipea\node_modules\html2jade\package.json
+647 info preuninstall html2jade@0.7.7
+648 info uninstall html2jade@0.7.7
+649 verbose true,D:\bigpipea\node_modules,D:\bigpipea\node_modules unbuild html2jade@0.7.7
+650 verbose D:\bigpipea\node_modules\.bin,[object Object] binRoot
+651 info postuninstall html2jade@0.7.7
+652 error Error: No compatible version found: jsdom-little@'^0.10.5'
+652 error Valid install targets:
+652 error ["0.10.4","0.10.5"]
+652 error     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:553:10)
+652 error     at C:\Program Files\nodejs\node_modules\npm\lib\cache.js:477:15
+652 error     at saved (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:138:7)
+652 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:218:7
+652 error     at Object.oncomplete (fs.js:297:15)
+653 error If you need help, you may report this log at:
+653 error     <http://github.com/isaacs/npm/issues>
+653 error or email it to:
+653 error     <npm-@googlegroups.com>
+654 error System Windows_NT 5.1.2600
+655 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+656 error cwd D:\bigpipea
+657 error node -v v0.8.12
+658 error npm -v 1.1.63
+659 verbose exit [ 1, true ]
