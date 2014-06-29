@@ -12,7 +12,8 @@
         "mailer":"*",
         "express":"3.2.4",
         "ejs": "*",
-        "express-partials": "*"
+        "express-partials": "*",
+        "requirejs":"*"
     },
     "dependencies": {
 

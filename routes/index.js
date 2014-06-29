@@ -23,7 +23,7 @@ function getDate(date) {
 
 exports.index = function(req, res){
 	//获取user文件夹里的所有文件名
-    res.send(200,'welcome!');
+    res.send(200,'welcome!!');
     return;
     fs.readdir('public/images/user', function(err, files){
 		res.render('index', { title: 'GMTest by KIDx.'
