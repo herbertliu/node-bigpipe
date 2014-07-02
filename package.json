@@ -1,21 +1,10 @@
 {
-    "name": "node-bigpipe",
-    "version": "0.0.1-ignored",
-    "node_version": ">= 0.8.0",
-    "devDependencies": {
-        "forever":"*",
-        "cluster":"*",
-        "geddy":"*",
-        "redis":"*",
-        "html2jade":"*",
-        "xml2js":"*",
-        "mailer":"*",
-        "express":"3.2.4",
+    "name": "node-requirejs-example",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "2.5.0",
         "ejs": "*",
         "express-partials": "*",
-        "requirejs":">=1.0.0"
-    },
-    "dependencies": {
-
+        "requirejs": ">=1.0.0"
     }
 }

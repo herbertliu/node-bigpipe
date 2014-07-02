@@ -1,38 +1,12 @@
+define(['express','./routers/index'], function (express,routers) {
+    var app = express.createServer();
 
-/**
- * Module dependencies.
- */
+    app.use(express.logger({ format: ':method :url :status' }));
+    app.set('views', './views');
+    app.set('view engine', 'ejs');
+    app.set('view options', { layout: false });
 
-var express = require('express')
-    , routes = require('./routes/index')
-    , http = require('http')
-    , path = require('path')
-    , partials = require('express-partials');
+ 	routers(app);
 
-var app = express();
-
-// all environments
-app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-
-app.use(partials());
-
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
-
-// development only
-if ('development' == app.get('env')) {
-    app.use(express.errorHandler());
-}
-
-app.get('/', routes.index);
-//app.post('/spriter', routes.spriter);
-
-http.createServer(app).listen(app.get('port'), function(){
-    console.log("Server running at http://localhost:"+app.get('port'));
+    return app;
 });
