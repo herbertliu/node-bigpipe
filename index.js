@@ -1,1 +1,1 @@
-require('r.js');
+console.log('xxxxxxx');
