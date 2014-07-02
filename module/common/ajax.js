@@ -21,20 +21,27 @@
         var reqOpt = {
             host: opt.host || config.host,
             port: opt.port || config.port,
-            path: opt.path + (opt.param ? '?' + querystring.stringify(opt.param) : ''),
-
             method: (opt.type || 'GET').toUpperCase(),
             headers: opt.headers || {'Referer': 'http://ke.qq.com/index.html'}
         };
 
-
+        var postData = '';
+        if(opt.param){
+            var _param = querystring.stringify(opt.param);
+            if(reqOpt.method == 'GET'){
+                reqOpt.path = opt.path + (_param?'?'+_param : '');
+            }else{
+                postData = _param;
+            }   
+        }
+        
 
         var request = http.request(reqOpt);
 
         request.setNoDelay(true);
         request.setSocketKeepAlive(false);
 
-        opt.data && request.write(opt.data);
+        postData && request.write(postData);
 
         opt.dataType = (opt.dataType || 'json');
         opt.err || (opt.err = noop);
