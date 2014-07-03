@@ -1,6 +1,6 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['index/index'],factory);
+        define(['index/mod.index'],factory);
     } else {
         root['Routers'] = factory();
     }

@@ -1,10 +1,10 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['template/common', 'template/index', 'common/ajax', 'common/deferred'],factory);
+        define(['common/db','template/common', 'template/index', 'common/deferred','index/db.index'],factory);
     } else {
-        root['Index'] = factory(root['TmplInline_common'],root['TmplInline_index'], root['Ajax']);
+        root['Index'] = factory(root['DB'], root['TmplInline_common'],root['TmplInline_index']);
     }
-}(this, function (commonRender, indexRender, ajax, deferred) {
+}(this, function (DB , commonRender, indexRender, deferred) {
     function indexRouter(req, res) {
 
         var defer1 = deferred.create();
@@ -21,9 +21,7 @@
             res.render('index', listObj);
         });
         function getLoveTop(req, res) {
-            var reqOpt = {
-                host: 'ke.qq.com',
-                path: '/cgi-bin/course/get_love_top',
+           DB.get_love_top({
                 succ: function (data) {
 
                     //渲染最受欢迎模版
@@ -33,9 +31,9 @@
 
                     // 添加数据上报标记 report-tdw
                     /*$('#js_pay_list .js-course-item').each(function(index, node){
-                        var $node = $(this);
-                        $node.find('.js-course-name').attr('report-tdw', 'action=pay-Rankingclass-clk&ver1='+data.result.pay_items[index].id);
-                    });*/
+                     var $node = $(this);
+                     $node.find('.js-course-name').attr('report-tdw', 'action=pay-Rankingclass-clk&ver1='+data.result.pay_items[index].id);
+                     });*/
 
                     listObj.free_list =indexRender.love_list({
                         items: data.result.free_items|| []
@@ -43,19 +41,16 @@
                     defer3.resolve('defer3 ok');
                     // 添加数据上报标记 report-tdw
                     /*$('#js_free_list .js-course-item').each(function(index, node){
-                        var $node = $(this);
-                        $node.find('.js-course-name').attr('report-tdw', 'action=free-Rankingclass-clk&ver1=' + data.result.free_items[index].id);
-                    });*/
+                     var $node = $(this);
+                     $node.find('.js-course-name').attr('report-tdw', 'action=free-Rankingclass-clk&ver1=' + data.result.free_items[index].id);
+                     });*/
                 },
                 err: function (data) {res.send(data);}
-            };
-            ajax.doRequest(reqOpt);
+            });
         }
 
         function renderAgencyList(req, res) {
-            var reqOpt = {
-                host: 'ke.qq.com',
-                path: '/cgi-bin/tool/get_bottom_agency',
+            DB.get_bottom_agency({
                 param: {page: 1, count: 12},
                 succ: function (data) {
 
@@ -75,18 +70,17 @@
                     //res.render('index', {agency_list: html});
                 },
                 err: function (data) {res.send(data);}
-            };
-            ajax.doRequest(reqOpt);
+            });
         }
 
         function renderFeed(req, res){
             var hideName = function(name){
 
                 return (name + '').substr(0,1) + "****";
+
             }
-            var reqOpt = {
-                host: 'ke.qq.com',
-                path: '/cgi-bin/course/newest_apply',
+
+            DB.newest_apply({
                 param: {count: 8},
                 succ: function (data) {
                     var html = indexRender.feed_list(data.result || [], {hideName: hideName});
@@ -95,17 +89,16 @@
 
                 },
                 err: function (data) {res.send(data);}
-            };
-            ajax.doRequest(reqOpt);
+            });
+
         }
 
 
         function renderLive(req, res){
 
             var def_count = 3;
-            var reqOpt = {
-                host: 'ke.qq.com',
-                path: '/cgi-bin/course/live',
+
+            DB.live({
                 param: {page: 1, count: 8},
                 succ: function (data) {
                     var data = data.result,
@@ -131,8 +124,7 @@
 
                 },
                 err: function (data) {res.send(data);}
-            };
-            ajax.doRequest(reqOpt);
+            });
 
         }
 
@@ -140,7 +132,7 @@
         function renderHot(req, res){
 
             var def_count = 6;
-            var reqOpt = {
+            DB.hot_list({
                 host: 'ke.qq.com',
                 path: '/cgi-bin/course/hot_list',
                 param: {page: 1, count: 12},
@@ -168,15 +160,14 @@
 
                 },
                 err: function (data) {res.send(data);}
-            };
-            ajax.doRequest(reqOpt);
+            });
         }
 
 
         function renderNew(req, res){
 
             var def_count = 6;
-            var reqOpt = {
+            DB.new_list({
                 host: 'ke.qq.com',
                 path: '/cgi-bin/course/hot_list',
                 param: {page: 1, count: 12},
@@ -204,12 +195,11 @@
 
                 },
                 err: function (data) {res.send(data);}
-            };
-            ajax.doRequest(reqOpt);
+            });
         }
         //拉取最多课程的机构
         function renderMostHall(){
-            var reqOpt = {
+            DB.get_most_course_top({
                 host: 'ke.qq.com',
                 path: '/cgi-bin/agency/get_most_course_top',
                 succ: function (data) {
@@ -226,8 +216,7 @@
                      });*/
                 },
                 err: function (data) {res.send(data);}
-            };
-            ajax.doRequest(reqOpt);
+            });
 
 
         }

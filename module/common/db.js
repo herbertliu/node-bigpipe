@@ -2,9 +2,11 @@
     if (typeof define === 'function' && define.amd) {
         define(['common/ajax'],factory);
     } else {
-        root['DB'] = factory(Ajax);
+        root['DB'] = factory(root['Ajax']);
     }
-}(this, function (Index) {
+}(this, function (ajax) {
+    //console.log(ajax);
+
     function noop () {}
      //extend
     function extend(scope,args,ex){
@@ -33,10 +35,10 @@
 
         },
         /**
-         * @opt  obj {url:String,param:Object,type:String,isBkn:Boolean,cb:Function}
+         * @opt  obj {path:String,param:Object,type:String,isBkn:Boolean,cb:Function}
          * @description cgi请求统一处理,此处不包含拉取base_key cgi请求（单独处理）
          * @private
-         * @url   {String} 请求地址,必选
+         * @path   {String} 请求地址,必选
          * @param    {Object} 请求传入参数
          * @type    {String} 请求方式 POST , GET,可选，默认是POST
          * @succ {Function} 成功，回调函数,可选
@@ -45,14 +47,14 @@
          */
         cgiHttp : function(opt){
             //cgi请求
-            if(!opt || !opt.url) return undefined;
+            if(!opt || !opt.path) return undefined;
             var _this = this;
             opt.param = opt.param || {};
             // just for test
-            
-            var httpFunction;
+
             var callBack = function(data){
-				
+				console.log(data,'===');
+
                 if ('retcode' in data) {
                     data.ec = data.retcode;
                 } else {
@@ -70,14 +72,14 @@
 					case -1001://自定义登录处理，没有登录态
                     case 100000: // 没有登陆态或登陆态失效或bkn失效
                     case 100021://需要验证登录，但是Bkn不存在，basekeyError                    	
-                        break;
+                        //break;
                     case 100001://输入参数错误
-                        break;
+                        //break;
                     case 100003://系统内部错误
-                        break;
+                        //break;
 					case -1000:
 						ec = data.ec = 0;//兼容http abort之后 status 为0
-						break;
+						//break;
                     case 102404://没有找到机构记录信息
                     case 110403://没有找到机构的结算信息
                     case 106402://不能找到这个QQ号码
@@ -121,9 +123,9 @@
                     case 101403://课程没有相关招生群
                     case 101405://课程没有这个招生群
 					case 106457://课程赠送 根据uin未查到QQ号码
-                        break;
+                        //break;
                     default://未知返回值
-                        break;
+                        //break;
                 }
                 //新增底层统一处理跳转信息，没有管理权限
 
@@ -134,6 +136,11 @@
 
             };
 
+            var _opt = {};
+            extend(_opt,opt);//集成变量
+            _opt.succ = callBack;
+            //console.log(_opt ,'=======');
+            ajax.doRequest(_opt);
 			
         },
     	 //the default scope is commonapi, you can use the other scope like window for example this.extend('call',function(){console.log(3333,arguments;return false;);},window,true)
@@ -163,11 +170,23 @@
 
             return function (opt) {
                 var _opt = {};
-                _opt.param = opt.param;
+
+                if(cfg.param){
+                    var _param = _opt.param = {};
+                    extend(_param , cfg.param);
+                    opt.param && extend(_param , opt.param);
+                }else{
+                    _opt.param = opt.param || {};
+                }
+
+                //默认采用全局参数
                 cfg.type && (_opt.type = cfg.type);
                 cfg.dataType && (_opt.dataType = cfg.dataType);
                 cfg.noNeedLogin && (_opt.noNeedLogin = cfg.noNeedLogin);
-                _opt.url = cfg.url;
+
+                _opt.path = opt.path || cfg.path || opt.url || cfg.url;
+
+                _opt.host = _opt.host || cfg.host || 'ke.qq.com';//设置host
                 _opt.succ = function(data){
                     return (cfg.succ || opt.succ || noop)(data);//调用回调函数
                 };

@@ -17,26 +17,30 @@
     }
 
     Ajax.prototype.doRequest = function (opt) {
+        if(!opt.path) return
 
         var reqOpt = {
             host: opt.host || config.host,
             port: opt.port || config.port,
+            path : opt.path,
             method: (opt.type || 'GET').toUpperCase(),
             headers: opt.headers || {'Referer': 'http://ke.qq.com/index.html'}
         };
 
         var postData = '';
+
         if(opt.param){
             var _param = querystring.stringify(opt.param);
             if(reqOpt.method == 'GET'){
-                reqOpt.path = opt.path + (_param?'?'+_param : '');
+                reqOpt.path = opt.path + (_param ? '?' + _param : '');
             }else{
                 postData = _param;
             }   
         }
-        
-
+        console.log(reqOpt);
         var request = http.request(reqOpt);
+
+        //console.log(request);
 
         request.setNoDelay(true);
         request.setSocketKeepAlive(false);
@@ -82,17 +86,25 @@
                     return;
                 }
 
+               // console.log(reqOpt);
+
                 buffer = Buffer.concat(result);
 
                 if (opt.dataType === 'json' || opt.dataType === 'text' || opt.dataType === 'html') {
                     responseText = buffer.toString('UTF-8');
                 }
+                //console.log(responseText);
 
                 if (opt.dataType === 'json') {
-                    obj = JSON.parse(responseText);
-                    opt.succ(obj);
+                    var obj = {};
+                    try{
+                        obj = JSON.parse(responseText);
+                        opt.succ(obj);
+                    }catch(e){
+                        opt.err({ec: response.statusCode,text:responseText});
+                    }
                 } else {
-                    opt.succ(buffer);
+                   opt.succ(buffer);
                 }
 
             });
