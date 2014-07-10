@@ -9,9 +9,11 @@ requirejs.config({
     nodeRequire: require,
     baseUrl: './',
     paths : {
+        'routers':'./routers',
     	'common' : './module/common',
     	'template' : './module/template',
-    	'index' : './module/index'
+    	'index' : './module/index',
+        'bigpipe' : './module/bigpipe'
     }
 });
 

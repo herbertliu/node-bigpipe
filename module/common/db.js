@@ -53,15 +53,15 @@
             // just for test
 
             var callBack = function(data){
-				console.log(data,'===');
+				//console.log(data,'===');
 
                 if ('retcode' in data) {
                     data.ec = data.retcode;
                 } else {
                     data.retcode = data.ec;
                 }
-                var ec = data.ec;//('retcode' in data) ? data.retcode : data.ec;
-                var errFlag;
+                var ec = data.retcode || data.ec;//('retcode' in data) ? data.retcode : data.ec;
+                var errFlag = true;
                 //if(typeof ec =="undefined") ec = 999;
                 switch(ec){
                     case 0://成功
@@ -143,7 +143,7 @@
             ajax.doRequest(_opt);
 			
         },
-    	 //the default scope is commonapi, you can use the other scope like window for example this.extend('call',function(){console.log(3333,arguments;return false;);},window,true)
+    	//the default scope is commonapi, you can use the other scope like window for example this.extend('call',function(){console.log(3333,arguments;return false;);},window,true)
         //or this.extend({'call':function(){console.log(3333,arguments;return false;);}},window,true);
         extend : function(args, cb , scope ,ex){//scope
             //add function to this object

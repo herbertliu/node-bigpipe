@@ -6,28 +6,29 @@
     }
 }(this, function (DB , commonRender, indexRender, deferred) {
     function indexRouter(req, res) {
-
-        var defer1 = deferred.create();
-        var defer2 = deferred.create();
-        var defer3 = deferred.create();
-        var defer4 = deferred.create();
-        var defer5 = deferred.create();
-        var defer6 = deferred.create();
-        var defer7 = deferred.create();
-
-        var listObj = {};
-
-        deferred.when(defer1, defer2, defer3, defer4, defer5, defer6, defer7).done(function(d1, d2){
-            res.render('index', listObj);
+        
+        res.pipeLayout('index/index',{
+            'pay_list' : res.pipeCreate('pagelet_pay_list'),
+            'free_list' : res.pipeCreate('pagelet_free_list'),
+            'agency_list' : res.pipeCreate('pagelet_agency_list'),
+            'feed_list' : res.pipeCreate('pagelet_feed_list'),
+            'live_list' : res.pipeCreate('pagelet_live_list'),
+            'hot_list' : res.pipeCreate('pagelet_hot_list'),
+            'new_list' : res.pipeCreate('pagelet_new_list'),
+            'most_hall' : res.pipeCreate('pagelet_most_hall')
         });
+
+
         function getLoveTop(req, res) {
            DB.get_love_top({
                 succ: function (data) {
 
                     //渲染最受欢迎模版
-                    listObj.pay_list = indexRender.love_list({
+                    var pay_list = indexRender.love_list({
                         items: data.result.pay_items || []
                     });
+
+                    res.pipePagelet('pagelet_pay_list', 'index/pagelet', {pay_list:pay_list});
 
                     // 添加数据上报标记 report-tdw
                     /*$('#js_pay_list .js-course-item').each(function(index, node){
@@ -35,17 +36,22 @@
                      $node.find('.js-course-name').attr('report-tdw', 'action=pay-Rankingclass-clk&ver1='+data.result.pay_items[index].id);
                      });*/
 
-                    listObj.free_list =indexRender.love_list({
+                    var free_list =indexRender.love_list({
                         items: data.result.free_items|| []
                     });
-                    defer3.resolve('defer3 ok');
+
+                    res.pipePagelet('pagelet_free_list', 'index/pagelet', {free_list:free_list});
+
                     // 添加数据上报标记 report-tdw
                     /*$('#js_free_list .js-course-item').each(function(index, node){
                      var $node = $(this);
                      $node.find('.js-course-name').attr('report-tdw', 'action=free-Rankingclass-clk&ver1=' + data.result.free_items[index].id);
                      });*/
                 },
-                err: function (data) {res.send(data);}
+                err: function (data) {
+                    res.pipePagelet('pagelet_pay_list', 'index/pagelet', {pay_list:JSON.stringify(data)});
+                    res.pipePagelet('pagelet_free_list', 'index/pagelet', {free_list:JSON.stringify(data)});
+                }
             });
         }
 
@@ -65,11 +71,13 @@
                             items: items
                         }) + '</ul>';
                     }
-                    listObj.agency_list = html;
-                    defer1.resolve('defer1 ok');
-                    //res.render('index', {agency_list: html});
+
+                    res.pipePagelet('pagelet_agency_list', 'index/pagelet', {agency_list:html});
+
                 },
-                err: function (data) {res.send(data);}
+                err: function (data) {
+                    res.pipePagelet('pagelet_agency_list', 'index/pagelet', {agency_list:JSON.stringify(data)});
+                }
             });
         }
 
@@ -84,11 +92,14 @@
                 param: {count: 8},
                 succ: function (data) {
                     var html = indexRender.feed_list(data.result || [], {hideName: hideName});
-                    listObj.feed_list = html;
-                    defer2.resolve('defer1 ok');
+
+                    res.pipePagelet('pagelet_feed_list', 'index/pagelet', {feed_list:html});
+
 
                 },
-                err: function (data) {res.send(data);}
+                err: function (data) {
+                    res.pipePagelet('pagelet_feed_list', 'index/pagelet', {feed_list:JSON.stringify(data)});
+                }
             });
 
         }
@@ -118,12 +129,14 @@
                             __from__: 'live'
                         }) + '</ul>';
                     }
-                    listObj.live_list = html;
-                    //console.log(html);
-                    defer4.resolve('defer1 ok');
+
+                    res.pipePagelet('pagelet_live_list', 'index/pagelet', {live_list:html});
+
 
                 },
-                err: function (data) {res.send(data);}
+                err: function (data) {
+                    res.pipePagelet('pagelet_live_list', 'index/pagelet', {live_list:JSON.stringify(data)});
+                }
             });
 
         }
@@ -133,12 +146,10 @@
 
             var def_count = 6;
             DB.hot_list({
-                host: 'ke.qq.com',
-                path: '/cgi-bin/course/hot_list',
                 param: {page: 1, count: 12},
-                succ: function (res) {
+                succ: function (data) {
 
-                    var data = res.result,
+                    var data = data.result,
                         html = '';
 
                     for(var i = 0, len = Math.ceil(data.items.length / def_count); i < len; i++) {
@@ -155,25 +166,24 @@
                             }
                         }) + '</ul>';
                     }
-                    listObj.hot_list = html;
-                    defer5.resolve('defer1 ok');
+
+                    res.pipePagelet('pagelet_hot_list', 'index/pagelet', {hot_list:html});
 
                 },
-                err: function (data) {res.send(data);}
+                err: function (data) {
+                    res.pipePagelet('pagelet_hot_list', 'index/pagelet', {hot_list:''});
+                }
             });
         }
-
 
         function renderNew(req, res){
 
             var def_count = 6;
             DB.new_list({
-                host: 'ke.qq.com',
-                path: '/cgi-bin/course/hot_list',
                 param: {page: 1, count: 12},
-                succ: function (res) {
+                succ: function (data) {
 
-                    var data = res.result,
+                    var data = data.result,
                         html = '';
 
                     for(var i = 0, len = Math.ceil(data.items.length / def_count); i < len; i++) {
@@ -190,11 +200,13 @@
                             }
                         }) + '</ul>';
                     }
-                    listObj.new_list = html;
-                    defer6.resolve('defer1 ok');
+                    res.pipePagelet('pagelet_new_list', 'index/pagelet', {new_list:html});
 
                 },
-                err: function (data) {res.send(data);}
+                err: function (data) {
+                    res.pipePagelet('pagelet_new_list', 'index/pagelet', {new_list:JSON.stringify(data)});
+
+                }
             });
         }
         //拉取最多课程的机构
@@ -207,26 +219,25 @@
                     data.result.items = data.result.items || [];
 
                     //渲染机构模版
-                    listObj.most_hall = indexRender.most_hall(data.result);
-                    defer7.resolve('defer3 ok');
-                    // 添加数据上报标记 report-tdw
-                    /*$('#js_free_list .js-course-item').each(function(index, node){
-                     var $node = $(this);
-                     $node.find('.js-course-name').attr('report-tdw', 'action=free-Rankingclass-clk&ver1=' + data.result.free_items[index].id);
-                     });*/
+                    var most_hall = indexRender.most_hall(data.result);
+                    res.pipePagelet('pagelet_most_hall', 'index/pagelet', {most_hall:most_hall});
                 },
-                err: function (data) {res.send(data);}
+                err: function (data) {
+                    res.pipePagelet('pagelet_most_hall', 'index/pagelet', {most_hall:JSON.stringify(data)});
+                }
             });
 
 
         }
+
+        getLoveTop(req, res);
         renderAgencyList(req, res);
         renderFeed(req, res);
-        getLoveTop(req, res);
         renderLive(req, res);
         renderHot(req, res);
         renderNew(req, res);
         renderMostHall(req, res);
+
     }
 
     return indexRouter;

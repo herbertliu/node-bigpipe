@@ -1,4 +1,4 @@
-define(['express','./routers/index'], function (express,routers) {
+define(['bigpipe/BigPipe','express','routers/index'], function (BigPipe,express,routers) {
     var app = express.createServer();
 
     app.use(express.logger({ format: ':method :url :status' }));

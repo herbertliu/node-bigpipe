@@ -37,7 +37,7 @@
                 postData = _param;
             }   
         }
-        console.log(reqOpt);
+
         var request = http.request(reqOpt);
 
         //console.log(request);
@@ -99,10 +99,11 @@
                     var obj = {};
                     try{
                         obj = JSON.parse(responseText);
-                        opt.succ(obj);
                     }catch(e){
                         opt.err({ec: response.statusCode,text:responseText});
+                        return;
                     }
+                    opt.succ(obj);
                 } else {
                    opt.succ(buffer);
                 }
