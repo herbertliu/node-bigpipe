@@ -22,6 +22,7 @@
                 scope[i] = args[i];    //add window global callback function
             }
         }
+        return scope;
     }
 
    

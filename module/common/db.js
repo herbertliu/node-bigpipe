@@ -1,10 +1,10 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['common/ajax'],factory);
+        define(['common/ajax','common/jquery'],factory);
     } else {
         root['DB'] = factory(root['Ajax']);
     }
-}(this, function (ajax) {
+}(this, function (ajax , $) {
     //console.log(ajax);
 
     function noop () {}
@@ -53,7 +53,7 @@
             // just for test
 
             var callBack = function(data){
-				//console.log(data,'===');
+				//console.log(' Response of ' + opt.path + ' return ' , JSON.stringify(data));
 
                 if ('retcode' in data) {
                     data.ec = data.retcode;
@@ -170,7 +170,6 @@
 
             return function (opt) {
                 var _opt = {};
-
                 if(cfg.param){
                     var _param = _opt.param = {};
                     extend(_param , cfg.param);
@@ -186,7 +185,12 @@
 
                 _opt.path = opt.path || cfg.path || opt.url || cfg.url;
 
-                _opt.host = _opt.host || cfg.host || 'ke.qq.com';//设置host
+                _opt.host = _opt.host || cfg.host || '10.213.111.104';//设置host
+                _opt.headers = $.extend(cfg.headers || {} , {
+                    'HOST' : 'ke.qq.com',
+                    'Origin': 'http://ke.qq.com'
+                })
+                console.log(_opt); 
                 _opt.succ = function(data){
                     return (cfg.succ || opt.succ || noop)(data);//调用回调函数
                 };

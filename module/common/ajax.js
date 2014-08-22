@@ -1,13 +1,15 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['http', 'zlib', 'querystring','common/config'], factory);
+        define(['http', 'zlib', 'querystring','common/config','common/jquery'], factory);
     } else {
         root['Ajax'] = factory();
     }
-}(this, function (http, zlib, querystring,config) {
+}(this, function (http, zlib, querystring,config,$ ,L5 ) {
 
     //var config = {};
+    //var L5 = require('api/L5/L5.api');
 
+    //console.log(L5);
 
     function noop(){}
 
@@ -19,12 +21,14 @@
     Ajax.prototype.doRequest = function (opt) {
         if(!opt.path) return
 
+
+        var _headers = $.extend( opt.headers || {} , {'Referer': 'http://ke.qq.com/index.html'});
         var reqOpt = {
             host: opt.host || config.host,
             port: opt.port || config.port,
             path : opt.path,
             method: (opt.type || 'GET').toUpperCase(),
-            headers: opt.headers || {'Referer': 'http://ke.qq.com/index.html'}
+            headers: _headers
         };
 
         var postData = '';

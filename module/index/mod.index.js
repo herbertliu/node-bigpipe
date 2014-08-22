@@ -22,7 +22,6 @@
         function getLoveTop(req, res) {
            DB.get_love_top({
                 succ: function (data) {
-
                     //渲染最受欢迎模版
                     var pay_list = indexRender.love_list({
                         items: data.result.pay_items || []
