@@ -16,7 +16,7 @@ define(['bigpipe/BigPipe','express','routers/index','module'], function (BigPipe
     app.set('view engine', 'ejs');
     app.set('view options', { layout: false });
 
- 	routers(app);
+ 	routers(app);//入口
 
     return app;
 });
